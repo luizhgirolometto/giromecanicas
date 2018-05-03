@@ -11,7 +11,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Customers</h1>
+			<h1 class="page-header">Clientes</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -57,12 +57,12 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>customers/add_customer" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New Customer</button>
+								<button type="button" class="btn btn-primary">Inserir Novo Cliente</button>
 							</a>
 						</div>
 						<div class="col-md-6" style="text-align: right">
 							<a href="<?=base_url()?>customers/exportCustomersList" style="text-decoration: none;" target="_blank">
-								<div class="btn btn-success">Export Customers List</div>
+								<div class="btn btn-success">Exportar Lista de Clientes</div>
 							</a>
 						</div>
 					</div>
@@ -73,12 +73,12 @@
 						    <thead>
 						        <tr>
 						            <th width="5%"><span>#</span></th>
-						            <th width="15%"><span>Full Name</span></th>
-							    	<th width="10%"><span>NRIC</span></th>
+						            <th width="15%"><span>Nome</span></th>
+							    	<th width="10%"><span>CPF/CNPJ</span></th>
 							    	<th width="10%"><span>Email</span></th>
-							    	<th width="10%"><span>Mobile</span></th>
-							    	<th width="10%"><span>Customer Group</span></th>
-							    	<th width="20%"><span>Action</span></th>
+							    	<th width="10%"><span>Telefone</span></th>
+							    	<th width="10%"><span>Grupo de Cliente</span></th>
+							    	<th width="20%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>

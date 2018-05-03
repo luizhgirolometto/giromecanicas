@@ -10,7 +10,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Materials List</h1>
+			<h1 class="page-header">Lista de Produtos</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -56,12 +56,12 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>materials/add_material" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New Material</button>
+								<button type="button" class="btn btn-primary">Inserir Novo Produto</button>
 							</a>
 						</div>
 						<div class="col-md-6" style="text-align: right;">
 							<a href="<?=base_url()?>materials/exportMaterialsList" style="text-decoration: none;" target="_blank">
-								<div class="btn btn-success">Export Materials List</div>
+								<div class="btn btn-success">Exportar Lista de Produtos</div>
 							</a>
 						</div>
 					</div>
@@ -73,13 +73,13 @@
 						        <tr>
 						            <th width="5%"><span>#</span></th>
 						            <th width="10%"><span>SKU</span></th>
-						            <th width="20%"><span>Material Name</span></th>
-						            <th width="15%"><span>Material Type</span></th>
-							    	<th width="10%"><span>Cost</span></th>
-							    	<th width="10%"><span>Price</span></th>
-							    	<th width="10%"><span>Existing Qty.</span></th>
+						            <th width="20%"><span>Produto</span></th>
+						            <th width="15%"><span>Tipo</span></th>
+							    	<th width="10%"><span>Custo</span></th>
+							    	<th width="10%"><span>Preço</span></th>
+							    	<th width="10%"><span>Qtde no Estoque.</span></th>
 							    	<th width="10%"><span>Status</span></th>
-							    	<th width="10%"><span>Action</span></th>
+							    	<th width="10%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>
