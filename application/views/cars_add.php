@@ -109,7 +109,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Add New Car</h1>
+			<h1 class="page-header">Inserir Veículo</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -157,11 +157,11 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Owner <span class="required">*</span>
+									Proprietário <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<select name="owner" class="add_car_owner form-control" required>
-										<option value="">Choose Car Owner</option>
+										<option value="">Selecione Proprietário</option>
 									<?php
                                         $ownerData    = $this->Constant_model->getDataAll("customers", "firstname", "ASC");
                                         for ($w = 0; $w < count($ownerData); $w++) {
@@ -182,7 +182,7 @@
 									</select>
 								</div>
 								<label class="col-md-3 control-label" for="name">
-								Placa do carro <span class="required">*</span>
+								Placa<span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="plate" class="form-control" required autocomplete="off" />
@@ -192,11 +192,11 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Car Make <span class="required">*</span>
+									Marca<span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<select name="car_make" class="add_car_make form-control" required>
-										<option value="">Choose your car make</option>
+										<option value="">Selecione a marca</option>
 									<?php
                                         $carMakeData    = $this->Constant_model->getDataAll("car_make", "name", "ASC");
                                         for ($c = 0; $c < count($carMakeData); $c++) {
@@ -212,7 +212,7 @@
 									</select>
 								</div>
 								<label class="col-md-3 control-label" for="email">
-									Car Model <span class="required">*</span>
+									Modelo <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="car_model" class="form-control" required autocomplete="off" />
@@ -222,13 +222,13 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Chassis Number <span class="required">*</span>
+									Número do Chassis <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="chassis" class="form-control" required autocomplete="off" />
 								</div>
 								<label class="col-md-3 control-label" for="email">
-									Color <span class="required">*</span>
+									Cor <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="color" class="form-control" required autocomplete="off" />
@@ -238,18 +238,18 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Mileage (km)<span class="required">*</span>
+									Kilometragem (km)<span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="mileage" class="form-control" required autocomplete="off" />
 								</div>
 								<label class="col-md-3 control-label" for="email">
-									Transmission <span class="required">*</span>
+									Transmissão <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<select name="transmission" class="form-control" required>
-										<option value="">Choose your car Transmission</option>
-										<option value="1">Automatic</option>
+										<option value="">Tipo de Transmissão</option>
+										<option value="1">Automatico</option>
 										<option value="2">Manual</option>
 									</select>
 								</div>
@@ -258,10 +258,10 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Car Photo
+									Foto 	
 								</label>
 								<div class="col-md-3">
-									<a class="file_input" data-jfiler-name="files" data-jfiler-extensions="jpg, jpeg, png, gif"><i class="icon-jfi-paperclip"></i> Attach a file</a>
+									<a class="file_input" data-jfiler-name="files" data-jfiler-extensions="jpg, jpeg, png, gif"><i class="icon-jfi-paperclip"></i> Anexar Foto</a>
 								</div>
 								<label class="col-md-3 control-label" for="email">&nbsp;</label>
 								<div class="col-md-3"></div>
@@ -272,7 +272,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -289,7 +289,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>cars/car_lists" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>
@@ -301,17 +301,17 @@
 <script>
 	$(document).ready(function() {
 		$(".add_car_owner").select2({
-			placeholder: "Choose Your Car Owner",
+			placeholder: "Selecione Proprietário",
 			allowClear: true
 		});
 		
 		$(".add_car_make").select2({
-			placeholder: "Choose Your Car Make",
+			placeholder: "Selecione a marca",
 			allowClear: true
 		});
 		
 		$(".assign_task").select2({
-			placeholder: "Choose Task For Service Package",
+			placeholder: "Escolha Tarefa Para Pacote de Serviços",
 			allowClear: true
 		});
 	

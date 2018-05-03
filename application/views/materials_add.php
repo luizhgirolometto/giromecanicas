@@ -5,7 +5,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Add Material</h1>
+			<h1 class="page-header">Inserir Produtos</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -54,7 +54,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
 									SKU <span class="required">*</span><br />
-									<span style="color: #808080; font-size: 12px;">Stock Keeping Unit</span>
+									<span style="color: #808080; font-size: 12px;">Unidade de armazenamento</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="sku" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" />
@@ -64,7 +64,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Material Name <span class="required">*</span>
+									Produto <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="material_name" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" />
@@ -74,11 +74,11 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Material Type <span class="required">*</span>
+									Tipo <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<select name="material_type" class="form-control" required style="border: 1px solid #3a3a3a; color: #010101;">
-										<option value="">Choose Material Type</option>
+										<option value="">Selecione o tipo do produto</option>
 									<?php
                                         $matTypeData    = $this->Constant_model->getDataAll("material_type", "id", "ASC");
                                         for ($c = 0; $c < count($matTypeData); $c++) {
@@ -99,7 +99,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Cost <span class="required">*</span>
+									Custo <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="cost" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" />
@@ -109,7 +109,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Price <span class="required">*</span>
+									Preço <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="price" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" />
@@ -123,8 +123,8 @@
 								</label>
 								<div class="col-md-3">
 									<select name="status" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;">
-										<option value="1">Active</option>
-										<option value="0">Inactive</option>
+										<option value="1">Ativo</option>
+										<option value="0">Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-7"></div>
@@ -135,7 +135,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-3 widget-left" style="height: auto; padding-top: 0px;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -152,7 +152,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>materials/materials_list" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>

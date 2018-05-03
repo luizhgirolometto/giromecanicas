@@ -7,7 +7,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Add New Customer</h1>
+			<h1 class="page-header">Inserir Cliente</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -55,7 +55,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									NIRC <span class="required">*</span>
+									CPF/CPNJ <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="nric" required style="width: 100%;" autofocus autocomplete="off" />
@@ -65,7 +65,7 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									First Name <span class="required">*</span>
+									Primeiro Nome <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="fn" required style="width: 100%;" autocomplete="off" />
@@ -75,7 +75,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Last Name 
+									Sobrenome
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="ln" style="width: 100%;" autocomplete="off" />
@@ -85,7 +85,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Email Address
+									E-mail
 								</label>
 								<div class="col-md-7">
 									<input type="email" class="form-control" name="em" style="width: 100%;" autocomplete="off" />
@@ -95,7 +95,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Mobile <span class="required">*</span>
+									Telefone <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="mb" required style="width: 100%;" autocomplete="off" />
@@ -105,7 +105,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Address
+									Endereço
 								</label>
 								<div class="col-md-7">
 									<textarea name="address" class="form-control"></textarea>
@@ -115,7 +115,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Postal Code
+									CEP
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="postal" style="width: 100%;" autocomplete="off" />
@@ -125,11 +125,11 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Country
+									País
 								</label>
 								<div class="col-md-7">
 									<select class="add_cust_country form-control" name="country" tabindex="-1" style="width: 100%;">
-										<option value="">Choose Country</option>
+										<option value="">Selecione País</option>
 									<?php
                                         $countryData        = $this->Constant_model->getDataAll("countries", "name", "ASC");
                                         for ($c = 0; $c < count($countryData); $c++) {
@@ -149,7 +149,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Customer Group
+									Grupo de Cliente
 								</label>
 								<div class="col-md-7">
 									<select class="add_cust_group form-control" name="customer_group" tabindex="-1" style="width: 100%;" required>
@@ -176,8 +176,8 @@
 								</label>
 								<div class="col-md-7">
 									<select name="status" class="form-control">
-										<option value="1">Active</option>
-										<option value="0">Inactive</option>
+										<option value="1">Ativo</option>
+										<option value="0">Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -187,7 +187,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -217,27 +217,27 @@
 	$(document).ready(function() {
 		
 		$(".add_cust_country").select2({
-			placeholder: "Select Your Country",
+			placeholder: "Selecione o Pais",
 			allowClear: true
 		});
 		
 		$(".add_cust_group").select2({
-			placeholder: "Select Your Customer Group",
+			placeholder: "Selecione o grupo",
 			allowClear: true
 		});
 		
 		$(".add_car_owner").select2({
-			placeholder: "Choose Your Car Owner",
+			placeholder: "Selecione o Proprietário",
 			allowClear: true
 		});
 		
 		$(".add_car_make").select2({
-			placeholder: "Choose Your Car Make",
+			placeholder: "Selecione o modelo do veículo",
 			allowClear: true
 		});
 		
 		$(".assign_task").select2({
-			placeholder: "Choose Task For Service Package",
+			placeholder: "Escolha Tarefa Para Pacote de Serviços",
 			allowClear: true
 		});
 	

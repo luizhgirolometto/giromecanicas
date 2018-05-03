@@ -10,7 +10,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Suppliers</h1>
+			<h1 class="page-header">Fornecedores</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -59,7 +59,7 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>setting/add_supplier" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New Supplier</button>
+								<button type="button" class="btn btn-primary">Inserir Fornecedores</button>
 							</a>
 						</div>
 						<div class="col-md-6"></div>
@@ -77,10 +77,10 @@
 						            <th width="5%"><span>#</span></th>
 						            <th width="13%"><span>Name</span></th>
 							    	<th width="13%"><span>Email</span></th>
-							    	<th width="13%"><span>Telephone</span></th>
-							    	<th width="13%"><span>Address</span></th>
+							    	<th width="13%"><span>Telefone</span></th>
+							    	<th width="13%"><span>Endereço</th>
 							    	<th width="13%"><span>Status</span></th>
-							    	<th width="13%"><span>Action</span></th>
+							    	<th width="13%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>
@@ -132,7 +132,7 @@
 										</td>
 										<td>
 											<a href="<?=base_url()?>setting/edit_supplier?id=<?php echo $supplier_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Editar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

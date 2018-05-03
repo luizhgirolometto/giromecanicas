@@ -131,7 +131,7 @@
 										</td>
 										<td>
 											<a href="<?=base_url()?>materials/edit_material?id=<?php echo $mat_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Editar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

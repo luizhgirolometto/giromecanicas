@@ -10,7 +10,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Cars</h1>
+			<h1 class="page-header">Carros</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -56,12 +56,12 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>cars/add_car" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New Car</button>
+								<button type="button" class="btn btn-primary">Inserir Novo Veículo</button>
 							</a>
 						</div>
 						<div class="col-md-6" style="text-align: right">
 							<a href="<?=base_url()?>cars/exportCarsList" style="text-decoration: none;" target="_blank">
-								<div class="btn btn-success">Export Cars List</div>
+								<div class="btn btn-success">Exportar Lista de Veículos</div>
 							</a>
 						</div>
 					</div>
@@ -72,13 +72,13 @@
 						    <thead>
 						        <tr>
 						            <th width="5%"><span>#</span></th>
-						            <th width="10%"><span>Plate No.</span></th>
-							    	<th width="10%"><span>Owner</span></th>
-							    	<th width="10%"><span>Car Make</span></th>
-							    	<th width="10%"><span>Car Model</span></th>
-							    	<th width="10%"><span>Color</span></th>
-							    	<th width="10%"><span>Mileage</span></th>
-							    	<th width="10%"><span>Action</span></th>
+						            <th width="10%"><span>Placa</span></th>
+							    	<th width="10%"><span>Proprietário</span></th>
+							    	<th width="10%"><span>Marca</span></th>
+							    	<th width="10%"><span>Modelo</span></th>
+							    	<th width="10%"><span>Cor</span></th>
+							    	<th width="10%"><span>KM</span></th>
+							    	<th width="10%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>
@@ -115,7 +115,7 @@
 										<td><?php echo $mileage; ?> km</td>
 										<td>
 											<a href="<?=base_url()?>cars/edit_car?id=<?php echo $id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Editar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>
