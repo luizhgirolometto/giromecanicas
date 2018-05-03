@@ -136,7 +136,7 @@
 	                    <div class="col-md-5">
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Customer Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Cliente</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">

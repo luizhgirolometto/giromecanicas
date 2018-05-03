@@ -134,7 +134,7 @@ class Customers extends CI_Controller
                     "status"                =>    $status
                 );
                 if ($this->Constant_model->updateData("customers", $upd_data, $id)) {
-                    $this->session->set_flashdata('alert_msg', array('success', 'Update Customer', "Successfully Updated Customer Detail."));
+                    $this->session->set_flashdata('alert_msg', array('success', 'Atualizar Cliente', "Sucesso ao atualizar detalhes do cliente."));
                     redirect(base_url().'customers/edit_customer?id='.$id);
                 }
             }
