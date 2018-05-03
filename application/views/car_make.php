@@ -10,7 +10,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Car Make</h1>
+			<h1 class="page-header">Marca de Veículos</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -56,7 +56,7 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>setting/add_car_make" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New Car Make</button>
+								<button type="button" class="btn btn-primary">inserir Marca</button>
 							</a>
 						</div>
 						<div class="col-md-6"></div>
@@ -68,10 +68,10 @@
 						    <thead>
 						        <tr>
 						            <th width="5%"><span>#</span></th>
-						            <th width="25%"><span>Car Make Name</span></th>
-							    	<th width="25%"><span>Type</span></th>
+						            <th width="25%"><span>Nome</span></th>
+							    	<th width="25%"><span>Tipos</span></th>
 							    	<th width="10%"><span>Status</span></th>
-							    	<th width="10%"><span>Action</span></th>
+							    	<th width="10%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>

@@ -6,7 +6,7 @@
 	
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Add New Car Make</h1>
+			<h1 class="page-header">Inserir Marca</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -54,7 +54,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Car Make Name <span class="required">*</span>
+									Nome <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="name" required style="width: 100%;" autofocus autocomplete="off" />
@@ -64,11 +64,11 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Type <span class="required">*</span>
+									Tipo <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="type" class="form-control">
-										<option value="1">Japanese & Korean</option>
+										<option value="1">Japonês & Koreano</option>
 										<option value="2">Continental</option>
 									</select>
 								</div>
@@ -81,8 +81,8 @@
 								</label>
 								<div class="col-md-7">
 									<select name="status" class="form-control">
-										<option value="1">Active</option>
-										<option value="0">Inactive</option>
+										<option value="1">Ativo</option>
+										<option value="0">Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -92,7 +92,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -109,7 +109,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>setting/car_make" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>
