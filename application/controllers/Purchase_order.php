@@ -94,11 +94,11 @@ class Purchase_order extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Purchaseorder_model->record_po_count().' entries';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Purchaseorder_model->record_po_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Purchaseorder_model->record_po_count().' entries';
+            $sh_text = "Exibindo $start_sh até $end_sh de ".$this->Purchaseorder_model->record_po_count().' registros.';
         }
 
         $data['displayshowingentries']    = $sh_text;

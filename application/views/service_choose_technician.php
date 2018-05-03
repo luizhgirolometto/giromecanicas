@@ -46,14 +46,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 5 of 6 - Assign Technician
+					Passo 5 de 6 - Atribuir um técnico
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 					
@@ -61,7 +61,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Owner</b>
+								<b>Proprietário</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $owner_name; ?>
@@ -70,7 +70,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Plate Number</b>
+								<b>Placa do carro</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_plate; ?>
@@ -79,7 +79,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Make & Model</b>
+								<b>Marca e Modelo</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $make_name." ".$car_model; ?>
@@ -88,7 +88,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Color</b>
+								<b>Cor</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_color; ?>
@@ -97,7 +97,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Current Mileage</b>
+								<b>Odometro Atual(KM)</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $mileage; ?> km
@@ -106,7 +106,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Service Package</b>
+								<b>Pacote de Serviços</b>
 							</div>
 							<div class="col-md-10">
 								: 
@@ -138,7 +138,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 style="font-weight: bold; padding-bottom: 10px;">
-									Assign Technician
+									Atribuir técnico
 								</h4>
 							</div>
 						</div>	
@@ -153,8 +153,8 @@
 								<table class="table">
 									<thead>
 										<tr>
-									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Choose</span></th>
-								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px;"><span>Technician Name</span></th>
+									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Selecione</span></th>
+								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px;"><span>Nome do técnico</span></th>
 									    </tr>
 									</thead>
 									<tbody>
@@ -202,7 +202,7 @@
 									<input type="hidden" name="others" value="<?php echo $others; ?>" />
 								
 									<button type="submit" class="btn btn-primary btn-md" style="padding-left: 30px; padding-right: 30px;">
-										Next
+										Próx.
 									</button>
 								
 								</div>

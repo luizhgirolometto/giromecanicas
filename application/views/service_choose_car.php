@@ -21,14 +21,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 2 of 6 - Choose a Car
+					Passo 2 de 6 - Escolha o carro
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 				
@@ -67,7 +67,7 @@
                     ?>
 					
 					<h4 style="font-weight: bold; padding-bottom: 10px; margin-top: -10px;">
-						Choose car to do Servicing
+						Escolher o carro para realizar o serviço
 					</h4>
 					
 					<form class="form-horizontal" action="<?=base_url()?>services/third_step" method="post">
@@ -77,15 +77,15 @@
 								<table class="table">
 									<thead>
 										<tr>
-									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Choose</span></th>
-								            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Plate No.</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Owner</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Car Make</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Car Model</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Color</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Mileage</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Chassis No.</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Transmission</span></th>
+									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Selecionar</span></th>
+								            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Placa</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Proprietário</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Fabricante</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Modelo</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Cor</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Odometro</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Chassi.</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Transmissão</span></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -145,7 +145,7 @@
 						<td>
 							<?php
                                 if ($car_trans == "1") {
-                                    echo "Automatic";
+                                    echo "Automática";
                                 } elseif ($car_trans == "2") {
                                     echo "Manual";
                                 } ?>
@@ -165,7 +165,7 @@
 					<tr>
 						<td colspan="9" align="center" style="text-align: center;">
 							<button type="submit" class="btn btn-primary btn-md" style="padding-left: 30px; padding-right: 30px;">
-								Next
+								Próx.
 							</button>
 						</td>
 					</tr>
@@ -175,7 +175,7 @@
                 ?>
 				<tr>
 					<td colspan="9" align="center" style="text-align: center; font-weight: bold; font-size: 15px; height: 40px">
-						No record found for this Car Plate Number : <?php echo $plate; ?>
+						Nenhum registro encontrado para esta placa : <?php echo $plate; ?>
 					</td>
 				</tr>
 		<?php
@@ -195,7 +195,7 @@
 				<div class="row" style="border-top: 1px solid #ddd; padding-top: 20px;">
 					<div class="col-md-12" style="text-align: center;">
 						<div class="btn btn-primary" style="padding: 15px 25px; font-size: 20px; border-radius: 3px; cursor: pointer;" id="openToAdd">
-							Click To Add New Car
+							Clique para adicionar um novo carro
 						</div>
 					</div>
 				</div>
@@ -213,14 +213,14 @@
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
-            <h4 id="modalTitle" class="modal-title">Add New Car Detail</h4>
+            <h4 id="modalTitle" class="modal-title">Detalhes do novo carro</h4>
         </div>
         <div id="modalBody" class="modal-body">
 	    <form action="<?=base_url()?>services/AddCustomerCar" method="post">
 	        <!-- Customer // START -->
 	        <div class="row">
 		        <div class="col-md-12">
-			        <label style="font-size: 15px; font-weight: bold;">Customer Detail</label>
+			        <label style="font-size: 15px; font-weight: bold;">Detalhe do cliente</label>
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
@@ -230,17 +230,17 @@
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-		        <div class="col-md-3" style="padding-top: 8px;">First Name *</div>
+		        <div class="col-md-3" style="padding-top: 8px;">Primeiro Nome *</div>
 		        <div class="col-md-3">
 			        <input type="text" name="fn" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>
-		        <div class="col-md-2" style="padding-top: 8px;">Last Name</div>
+		        <div class="col-md-2" style="padding-top: 8px;">Sobrenome</div>
 		        <div class="col-md-4">
 			        <input type="text" name="ln" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" />
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-		        <div class="col-md-3" style="padding-top: 8px;">Mobile *</div>
+		        <div class="col-md-3" style="padding-top: 8px;">Celular *</div>
 		        <div class="col-md-9">
 			        <input type="text" name="mb" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>
@@ -250,12 +250,12 @@
 	        <!-- Car // START -->
 	        <div class="row">
 		        <div class="col-md-12">
-			        <label style="font-size: 15px; font-weight: bold;">Car Detail</label>
+			        <label style="font-size: 15px; font-weight: bold;">Detalhes do Carro</label>
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 		        <div class="col-md-3" style="padding-top: 8px;">
-			        Car Plate No. *
+			         Placa *
 		        </div>
 		        <div class="col-md-9">
 			        <input type="text" name="plate_numb" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
@@ -263,11 +263,11 @@
 		    </div>
 		    <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 		        <div class="col-md-3" style="padding-top: 8px;">
-			        Car Make *
+			        Fabricante
 		        </div>
 		        <div class="col-md-3">
 			        <select name="car_make" class="add_car_make form-control" required style="border: 1px solid #3a3a3a; color: #010101;">
-						<option value="">Choose your car make</option>
+						<option value="">Selecione o fabricante</option>
 					<?php
                         $carMakeData    = $this->Constant_model->getDataAll("car_make", "name", "ASC");
                         for ($c = 0; $c < count($carMakeData); $c++) {
@@ -283,7 +283,7 @@
 					</select>
 		        </div>
 		        <div class="col-md-2" style="padding-top: 8px;">
-			        Car&nbsp;Model&nbsp;*
+			        Modelo&nbsp;*
 		        </div>
 		        <div class="col-md-4">
 			        <input type="text" name="car_model" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
@@ -291,13 +291,13 @@
 		    </div>
 		    <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 		        <div class="col-md-3" style="padding-top: 8px;">
-			        Chassis No. *
+			        Chassi*
 		        </div>
 		        <div class="col-md-3">
 			        <input type="text" name="chassis" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>
 		        <div class="col-md-2" style="padding-top: 8px;">
-			        Color * 
+			        Cor* 
 		        </div>
 		        <div class="col-md-4">
 			        <input type="text" name="color" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
@@ -306,18 +306,18 @@
 		    
 		    <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 		        <div class="col-md-3" style="padding-top: 8px;">
-			        Mileage (km) *
+			        Odometro(km) *
 		        </div>
 		        <div class="col-md-3">
 			        <input type="text" name="mileage" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>
 		        <div class="col-md-2" style="padding-top: 8px;">
-			        Transmission * 
+			        Transmissão* 
 		        </div>
 		        <div class="col-md-4">
 			        <select name="transmission" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required>
-						<option value="">Choose your car Transmission</option>
-						<option value="1">Automatic</option>
+						<option value="">Selecione a transmissão</option>
+						<option value="1">Automática</option>
 						<option value="2">Manual</option>
 					</select>
 		        </div>
@@ -328,10 +328,10 @@
         <div class="modal-footer">
             <div class="row">
 	            <div class="col-md-6" style="text-align: left;">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 	            </div>
 	            <div class="col-md-6" style="text-align: right;">
-		            <button type="submit" class="btn btn-primary">Submit</button>
+		            <button type="submit" class="btn btn-primary">Cadastrar</button>
 	            </div>
             </div>
         </div>

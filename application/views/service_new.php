@@ -23,14 +23,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 1 of 6 - Search Car by Plate Number
+					Passo 1 de 6 - Buscar carro pelo número da placa
 				</div>	
 				
 				<div class="panel-body" style="padding: 25px;">
@@ -86,7 +86,7 @@
 					</div>
 					-->
 					<h4 style="font-weight: bold; padding-bottom: 10px; margin-top: -10px;">
-						Search car by Plate Number
+						Buscar carro pelo número da placa
 					</h4>
 					<form class="form-horizontal" action="<?=base_url()?>services/second_step" method="get">
 						<fieldset>
@@ -104,7 +104,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Car Plate Number
+								Placa do carro
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="plate" style="width: 100%;" autofocus autocomplete="off" />
@@ -118,7 +118,7 @@
 								</label>
 								<div class="col-md-7">
 									<button type="submit" class="btn btn-primary btn-md pull-left">
-										Search Car
+										Buscar carro
 									</button>	
 								</div>
 								<div class="col-md-3">

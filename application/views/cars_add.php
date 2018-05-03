@@ -182,7 +182,7 @@
 									</select>
 								</div>
 								<label class="col-md-3 control-label" for="name">
-									Car Plate Number <span class="required">*</span>
+								Placa do carro <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="plate" class="form-control" required autocomplete="off" />

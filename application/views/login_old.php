@@ -52,7 +52,7 @@
 					<section class="login_content">
 					
 						<form action="<?=base_url()?>auth/login" method="post">
-							<h1>Account Access</h1>
+							<h1>Acesso ao Sistema</h1>
 							<div>
 								<input type="text" name="email" class="form-control" placeholder="Email Address" required autofocus autocomplete="off" />
 							</div>

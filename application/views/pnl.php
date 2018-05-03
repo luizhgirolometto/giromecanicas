@@ -355,7 +355,7 @@
         } else {
             ?>
 			<tr>
-				<td colspan="8" class="table_header" align="center">No match record found!</td>
+				<td colspan="8" class="table_header" align="center">Nada encontrado!</td>
 			</tr>
 <?php
 

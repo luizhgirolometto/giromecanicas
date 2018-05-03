@@ -47,7 +47,7 @@ class Services extends CI_Controller
     
     // *************************** View Page -- START *************************** //
     
-    // Open New Service;
+    // Abrir Novo Serviço;
     public function new_service()
     {
         $this->load->view("service_new");
@@ -59,7 +59,7 @@ class Services extends CI_Controller
         $plate        = strip_tags($this->input->get("plate"));
         
         if (empty($plate)) {
-            $this->session->set_flashdata('alert_msg', array('failure', 'Search Cars', "Please enter your Car Plate Number!"));
+            $this->session->set_flashdata('alert_msg', array('failure', 'Buscar Carros', "Por favor informe a placa do carro!"));
             redirect(base_url().'services/new_service');
         }
         $data["plate"]        = $plate;
@@ -235,11 +235,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_opened_count().' entries';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_opened_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Services_model->record_opened_count().' entries';
+            $sh_text = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_opened_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -307,11 +307,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_request_inventory_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_request_inventory_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Showing $start_sh to $end_sh of ".$this->Services_model->record_request_inventory_count().' entries';
+            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_request_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -379,11 +379,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_drew_out_inventory_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_drew_out_inventory_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Showing $start_sh to $end_sh of ".$this->Services_model->record_drew_out_inventory_count().' entries';
+            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_drew_out_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -450,11 +450,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_completed_inventory_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_completed_inventory_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Showing $start_sh to $end_sh of ".$this->Services_model->record_completed_inventory_count().' entries';
+            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_completed_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -521,11 +521,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_invoiced_services_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_invoiced_services_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Showing $start_sh to $end_sh of ".$this->Services_model->record_invoiced_services_count().' entries';
+            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_invoiced_services_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -593,11 +593,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Services_model->record_closed_services_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_closed_services_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Showing $start_sh to $end_sh of ".$this->Services_model->record_closed_services_count().' entries';
+            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_closed_services_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -971,7 +971,7 @@ class Services extends CI_Controller
     }
     // Reject Request Materials for Report Defects -- END;
     
-    // Submit Open New Service;
+    // Submit Abrir Novo Serviço;
     public function confirmService()
     {
         $car_id        = strip_tags($this->input->post("car_id"));
@@ -1110,7 +1110,7 @@ class Services extends CI_Controller
         }
         // Service Job Defects -- END;
         
-        $this->session->set_flashdata('alert_msg', array('success', 'Open New Service', "Successfully Opened New Service for Plate Number : $car_plate_numb"));
+        $this->session->set_flashdata('alert_msg', array('success', 'Abrir Novo Serviço', "Novo serviço aberto com sucesso para a placa : $car_plate_numb"));
         redirect(base_url().'services/service_confirmation?job_id='.$job_id);
     }
     
@@ -1179,10 +1179,10 @@ class Services extends CI_Controller
             );
             $car_id        = $this->Constant_model->insertDataReturnLastId("cars", $ins_car_data);
             
-            $this->session->set_flashdata('alert_msg', array('success', 'Open New Service', "Successfully Added Plate Number $plate_numb with Owner $fn $ln."));
+            $this->session->set_flashdata('alert_msg', array('success', 'Abrir Novo Serviço', "Sucesso ao adicionar placa $plate_numb para o cliente $fn $ln."));
             redirect(base_url().'services/second_step?plate='.$plate_numb);
         } else {
-            $this->session->set_flashdata('alert_msg', array('success', 'Open New Service', "Plate Number : <b>$plate_numb</b> is already existing in the system!"));
+            $this->session->set_flashdata('alert_msg', array('success', 'Abrir Novo Serviço', "Placa : <b>$plate_numb</b> já está cadastrada no sistema!"));
             redirect(base_url().'services/new_service');
         }
         unset($ckPlateResult);

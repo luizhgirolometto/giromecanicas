@@ -94,11 +94,11 @@ class Technician_services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_opened_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_opened_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Technicianservices_model->record_opened_count().' entries';
+            $sh_text = "Exibindo$start_sh to $end_sh of ".$this->Technicianservices_model->record_opened_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -166,11 +166,11 @@ class Technician_services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_requested_material_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_requested_material_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Technicianservices_model->record_requested_material_count().' entries';
+            $sh_text = "Exibindo$start_sh to $end_sh of ".$this->Technicianservices_model->record_requested_material_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -237,11 +237,11 @@ class Technician_services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_drew_out_material_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_drew_out_material_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Technicianservices_model->record_drew_out_material_count().' entries';
+            $sh_text = "Exibindo$start_sh to $end_sh of ".$this->Technicianservices_model->record_drew_out_material_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -308,11 +308,11 @@ class Technician_services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Showing $start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_completed_service_count().' entries';
+            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Technicianservices_model->record_completed_service_count().' registros';
         } else {
             $start_sh = $page + 1;
             $end_sh = $page + count($data['results']);
-            $sh_text = "Showing $start_sh to $end_sh of ".$this->Technicianservices_model->record_completed_service_count().' entries';
+            $sh_text = "Exibindo$start_sh to $end_sh of ".$this->Technicianservices_model->record_completed_service_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;

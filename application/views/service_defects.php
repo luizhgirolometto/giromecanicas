@@ -48,14 +48,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 4 of 6 - Reported Defects If you have
+					Passo 4 de 6 - Problemas relatados
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 					
@@ -63,7 +63,7 @@
 					
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Owner</b>
+								<b>Proprietário</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $owner_name; ?>
@@ -72,7 +72,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Plate Number</b>
+								<b>Placa do carro</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_plate; ?>
@@ -81,7 +81,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Make & Model</b>
+								<b>Fabricante e Modelo</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $make_name." ".$car_model; ?>
@@ -90,7 +90,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Color</b>
+								<b>Cor</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_color; ?>
@@ -99,7 +99,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Current Mileage</b>
+								<b>Odometro Atual(KM)</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $mileage; ?> km
@@ -108,7 +108,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Service Package(s)</b>
+								<b>Pacotes de Serviço</b>
 							</div>
 							<div class="col-md-10">
 								: <?php 
@@ -139,7 +139,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 style="font-weight: bold; padding-bottom: 10px;">
-									Reported Defects
+									Problemas relatados
 								</h4>
 							</div>
 						</div>	
@@ -148,13 +148,13 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Tyres <span class="required">*</span>
+									Pneus <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="tyres" style="width: 100%;" autofocus autocomplete="off" />
 								</div>
 								<label class="col-md-2 control-label" for="name">
-									Steering <span class="required">*</span>
+								Direção <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="steering" style="width: 100%;" autofocus autocomplete="off" />
@@ -163,13 +163,13 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Engine <span class="required">*</span>
+									Motor <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="engine" style="width: 100%;" autofocus autocomplete="off" />
 								</div>
 								<label class="col-md-2 control-label" for="name">
-									Suspension <span class="required">*</span>
+									Suspensão <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="suspension" style="width: 100%;" autofocus autocomplete="off" />
@@ -178,13 +178,13 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Battery <span class="required">*</span>
+									Bateria <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="battery" style="width: 100%;" autofocus autocomplete="off" />
 								</div>
 								<label class="col-md-2 control-label" for="name">
-									Others <span class="required">*</span>
+									Outros <span class="required">*</span>
 								</label>
 								<div class="col-md-4">
 									<input type="text" class="form-control" name="others" style="width: 100%;" autofocus autocomplete="off" />
@@ -200,7 +200,7 @@
 									<input type="hidden" name="mileage" value="<?php echo $mileage; ?>" />
 								
 									<button type="submit" class="btn btn-primary btn-md" style="padding-left: 30px; padding-right: 30px;">
-										Next
+										Próx.
 									</button>
 								
 								</div>

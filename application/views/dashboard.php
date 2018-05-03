@@ -86,7 +86,7 @@
 		// Today Services -- START;
 		$('#todayServices').highcharts({
 			title: {
-	            text: 'Today Services Amount',
+	            text: 'Quantidade de serviços hoje',
 	            x: -20 //center
 	        },
 	        subtitle: {
@@ -174,7 +174,7 @@
 				width: width,
         	},
 			title: {
-	            text: 'Daily Services Amount',
+	            text: 'Quantidade de serviços habitual',
 	            x: -20 //center
 	        },
 	        subtitle: {
@@ -259,7 +259,7 @@
 				width: width,
         	},
 	        title: {
-	            text: 'Weekly Services Amount',
+	            text: 'Quantidade de serviços na semana',
 	            x: -20 //center
 	        },
 	        subtitle: {
@@ -341,7 +341,7 @@
 				width: width,
         	},
 	        title: {
-	            text: 'Monthly Services Amount',
+	            text: 'Quantidade de serviços no mês',
 	            x: -20 //center
 	        },
 	        subtitle: {
@@ -454,10 +454,10 @@
 						<div class="panel-body tabs">
 						
 							<ul class="nav nav-pills" style="padding: 0px;">
-								<li class="active"><a href="#pilltab1" data-toggle="tab">Today Services Amount</a></li>
-								<li><a href="#pilltab2" data-toggle="tab">Daily Services Amount</a></li>
-								<li><a href="#pilltab3" data-toggle="tab">Weekly Services Amount</a></li>
-								<li><a href="#pilltab4" data-toggle="tab">Monthly Services Amount</a></li>
+								<li class="active"><a href="#pilltab1" data-toggle="tab">Quantidade de serviços hoje</a></li>
+								<li><a href="#pilltab2" data-toggle="tab">Quantidade de serviços habitual</a></li>
+								<li><a href="#pilltab3" data-toggle="tab">Quantidade de serviços na semana</a></li>
+								<li><a href="#pilltab4" data-toggle="tab">Quantidade de serviços no mês</a></li>
 							</ul>
 			
 							<div class="tab-content">

@@ -94,7 +94,7 @@ class Cars extends CI_Controller
             $this->session->set_flashdata('alert_msg', array('failure', 'Update Car', "Please Choose Car Owner!"));
             redirect(base_url().'cars/edit_car?id='.$id);
         } elseif (empty($plate)) {
-            $this->session->set_flashdata('alert_msg', array('failure', 'Update Car', "Please Enter Car Plate Number!"));
+            $this->session->set_flashdata('alert_msg', array('failure', 'Update Car', "Por favor informe a placa do carro!"));
             redirect(base_url().'cars/edit_car?id='.$id);
         } elseif (empty($car_make)) {
             $this->session->set_flashdata('alert_msg', array('failure', 'Update Car', "Please Choose Car Make!"));
@@ -228,7 +228,7 @@ class Cars extends CI_Controller
             $this->session->set_flashdata('alert_msg', array('failure', 'Add New Car', "Please Choose Car Owner!"));
             redirect(base_url().'cars/add_car');
         } elseif (empty($plate)) {
-            $this->session->set_flashdata('alert_msg', array('failure', 'Add New Car', "Please Enter Car Plate Number!"));
+            $this->session->set_flashdata('alert_msg', array('failure', 'Add New Car', "Por favor informe a placa do carro!"));
             redirect(base_url().'cars/add_car');
         } elseif (empty($car_make)) {
             $this->session->set_flashdata('alert_msg', array('failure', 'Add New Car', "Please Choose Car Make!"));
@@ -338,7 +338,7 @@ class Cars extends CI_Controller
                     }
                 }
             }
-            $this->session->set_flashdata('alert_msg', array('success', 'Add New Car', "Successfully Added New Car : $plate."));
+            $this->session->set_flashdata('alert_msg', array('success', 'Adicionar novo Carro', "Sucesso! Carro adicionado : $plate."));
             redirect(base_url().'cars/car_lists');
         }
     }

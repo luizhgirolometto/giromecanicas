@@ -45,7 +45,7 @@ if ($_POST) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Install | Car Workshop System</title>
+		<title>Instalar GiroMecânicas</title>
 
 		<style type="text/css">
 		  body {
@@ -97,7 +97,7 @@ if ($_POST) {
 	</head>
 	<body>
 
-    <center><h1 style="color: #FFF;">Install - Car Workshop System</h1></center>
+    <center><h1 style="color: #FFF;">Instalar GiroMecânicas</h1></center>
     <br /><br />
     <?php if (is_writable($db_config_path)) {
     ?>

@@ -52,7 +52,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">New Service Confirmation : Job Id <?php echo $job_id; ?></h1>
+			<h1 class="page-header">Confirmação de novo serviço : Cód: <?php echo $job_id; ?></h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
@@ -62,11 +62,11 @@
 					<table border="0" style="border-collapse: collapse; width: 100%; height: auto;">
 						<tr>
 							<td width="50%">
-								New Service Confirmation : Job Id <?php echo $job_id; ?>
+							Confirmação de novo serviço : Cód: <?php echo $job_id; ?>
 							</td>
 							<td width="50%" style="text-align: right;">
 								<a href="<?=base_url()?>services/print_service_confirmation?job_id=<?php echo $job_id; ?>" style="text-decoration: none;" target="_blank">
-									<div class="btn btn-success">Print Confirmation</div>
+									<div class="btn btn-success">Imprimir confirmação</div>
 								</a>
 							</td>
 						</tr>
@@ -159,31 +159,31 @@
 						<div class="col-md-4">
 							
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Service Job Id :</div>
+								<div class="col-md-7" style="text-align: right;">Código do serviço :</div>
 								<div class="col-md-5">#<?php echo $job_id; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Service Date :</div>
+								<div class="col-md-7" style="text-align: right;">Data do serviço :</div>
 								<div class="col-md-5"><?php echo $service_date; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Plate Number :</div>
+								<div class="col-md-7" style="text-align: right;">Placa :</div>
 								<div class="col-md-5"><?php echo $car_plate_numb; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Current Mileage :</div>
+								<div class="col-md-7" style="text-align: right;">Odometro atual(KM) :</div>
 								<div class="col-md-5"><?php echo $car_mileage; ?> KM</div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Customer Name :</div>
+								<div class="col-md-7" style="text-align: right;">Nome do Cliente :</div>
 								<div class="col-md-5"><?php echo $cust_fn." ".$cust_ln; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Customer Mobile :</div>
+								<div class="col-md-7" style="text-align: right;">Celular :</div>
 								<div class="col-md-5"><?php echo $cust_mb; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Technician Name :</div>
+								<div class="col-md-7" style="text-align: right;">Nome do técnico :</div>
 								<div class="col-md-5"><?php echo $technician_name; ?></div>
 							</div>
 						</div>
@@ -203,7 +203,7 @@
 								<table class="table">
 									<tr>
 										<td colspan="2" width="100%" style="border-top: 0px; padding-left: 0px; font-size: 18px; padding-bottom: 0px;">
-											<label>Service Package</label>
+											<label>Pacote de serviço</label>
 										</td>
 									</tr>
 									<tr>
@@ -248,12 +248,12 @@
 										<table class="table">
 											<tr>
 												<td colspan="2" width="100%" style="border-top: 0px; padding-left: 0px; font-size: 18px; padding-bottom: 0px;">
-													<label>Reported Defects</label>
+													<label>Problemas relatados</label>
 												</td>
 											</tr>
 											<tr>
-									            <th width="80%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Name</span></th>
-										    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Remarks</span></th>
+									            <th width="80%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Nome</span></th>
+										    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Observações</span></th>
 											</tr>
 											<?php
                                                 $defectData    = $defectResult->result();

@@ -43,16 +43,16 @@
 						<h1 class="page-header" style="text-align: center;"><?php echo $setting_site_name; ?></h1>
 					</div>
 				</div>
-				<div class="panel-heading" style="text-align: center; font-size: 22px;">Account Access</div>
+				<div class="panel-heading" style="text-align: center; font-size: 22px;">Acesso ao Sistema</div>
 				<div class="panel-body">
 					
 					<form action="<?=base_url()?>auth/login" method="post">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail Address" name="email" type="email" required autofocus autocomplete="off" />
+								<input class="form-control" placeholder="Endereço de e-mail" name="email" type="email" required autofocus autocomplete="off" />
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" required autocomplete="off" />
+								<input class="form-control" placeholder="Senha de acesso." name="password" type="password" required autocomplete="off" />
 							</div>
 							<input type="submit" value="Login" class="btn btn-primary" name="sp_login" style="padding: 6px 25px;" />
 							

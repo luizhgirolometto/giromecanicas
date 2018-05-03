@@ -135,7 +135,7 @@
                                 ?>
 								<tr>
 									<td colspan="9" style="padding: 7px 7px; border-bottom: 1px solid #ddd; letter-spacing: 0.3px; text-align: center;">
-										No match record found!
+										Nada encontrado!
 									</td>
 								</tr>
 						<?php

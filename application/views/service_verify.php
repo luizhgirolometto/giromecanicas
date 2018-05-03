@@ -46,22 +46,22 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 6 of 6 - Verify New Service
+					Passo 6 de 6 - Verificar novo serviço
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 					
-					<form class="form-horizontal" action="<?=base_url()?>services/confirmService" method="post" onsubmit="return confirm('Are you confirm to Open New Service for Plate Number : <?php echo $car_plate; ?>?')" onsubmit="kk()">
+					<form class="form-horizontal" action="<?=base_url()?>services/confirmService" method="post" onsubmit="return confirm('Você confirma a abertura de um serviço para o carro : <?php echo $car_plate; ?>?')" onsubmit="kk()">
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Owner</b>
+								<b>Proprietário</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $owner_name; ?>
@@ -70,7 +70,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Plate Number</b>
+								<b>Placa do carro</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_plate; ?>
@@ -79,7 +79,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Car Make & Model</b>
+								<b>Fabricante e Modelo</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $make_name." ".$car_model; ?>
@@ -88,7 +88,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Color</b>
+								<b>Cor</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $car_color; ?>
@@ -97,7 +97,7 @@
 						
 						<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 							<div class="col-md-2">
-								<b>Current Mileage</b>
+								<b>Odometro Atual(KM)</b>
 							</div>
 							<div class="col-md-10">
 								: <?php echo $mileage; ?> km
@@ -110,7 +110,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 style="font-weight: bold; padding-top: 10px;">
-									Service Package
+									Pacote de Serviço
 								</h4>
 							</div>
 						</div>
@@ -120,8 +120,8 @@
 								<div class="table-responsive">
 									<table class="table">
 										<tr>
-								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Package Name</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Package Price</span></th>
+								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Nome do Pacote</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Preço</span></th>
 										</tr>
 										<?php
                                             for ($p = 0; $p < count($packArray); $p++) {
@@ -153,7 +153,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 style="font-weight: bold; padding-top: 10px;">
-									Report Defects
+									Problemas relatados
 								</h4>
 							</div>
 						</div>
@@ -163,14 +163,14 @@
 								<div class="table-responsive">
 									<table class="table">
 										<tr>
-								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Report Defects Name</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Report Defects Remark</span></th>
+								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Problema relatado</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Observações</span></th>
 										</tr>
 										<?php
                                             if (!empty($tyres)) {
                                                 ?>
 												<tr>
-													<td>Tyres</td>
+													<td>Pneus</td>
 													<td><?php echo $tyres; ?></td>
 												</tr>
 										<?php	
@@ -180,7 +180,7 @@
                                             if (!empty($steering)) {
                                                 ?>
 												<tr>
-													<td>Steering</td>
+													<td>Direção</td>
 													<td><?php echo $steering; ?></td>
 												</tr>
 										<?php	
@@ -190,7 +190,7 @@
                                             if (!empty($engine)) {
                                                 ?>
 												<tr>
-													<td>Engine</td>
+													<td>Motor</td>
 													<td><?php echo $engine; ?></td>
 												</tr>
 										<?php	
@@ -200,7 +200,7 @@
                                             if (!empty($suspension)) {
                                                 ?>
 												<tr>
-													<td>Suspension</td>
+													<td>Suspensão</td>
 													<td><?php echo $suspension; ?></td>
 												</tr>
 										<?php	
@@ -210,7 +210,7 @@
                                             if (!empty($battery)) {
                                                 ?>
 												<tr>
-													<td>Battery</td>
+													<td>Bateria</td>
 													<td><?php echo $battery; ?></td>
 												</tr>
 										<?php	
@@ -220,7 +220,7 @@
                                             if (!empty($others)) {
                                                 ?>
 												<tr>
-													<td>Others</td>
+													<td>Outros</td>
 													<td><?php echo $others; ?></td>
 												</tr>
 										<?php	
@@ -239,7 +239,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 style="font-weight: bold; padding-top: 10px;">
-									Technician
+									Técnico
 								</h4>
 							</div>
 						</div>
@@ -298,7 +298,7 @@
 									<input type="hidden" name="tech" value="<?php echo $tech; ?>" />
 								
 									<button type="submit" class="btn btn-primary btn-md" style="padding-left: 30px; padding-right: 30px;">
-										Submit
+										Cadastrar
 									</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">

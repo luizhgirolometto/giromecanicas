@@ -160,7 +160,7 @@
             return sprintf('%s records per page', pageNumber);
         },
         formatShowingRows: function (pageFrom, pageTo, totalRows) {
-            return sprintf('Showing %s to %s of %s rows', pageFrom, pageTo, totalRows);
+            return sprintf('Exibindo%s to %s of %s rows', pageFrom, pageTo, totalRows);
         },
         formatSearch: function () {
             return 'Search';

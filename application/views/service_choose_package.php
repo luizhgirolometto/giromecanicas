@@ -45,14 +45,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Open New Service</h1>
+			<h1 class="page-header">Abrir Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Step 3 of 6 - Choose Servicing Package
+					Passo 3 de 6 - Selecione o pacote de serviços
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 					
@@ -94,12 +94,12 @@
 						<input type="hidden" name="car_id" value="<?php echo $car_id; ?>" />
 					
 					<h4 style="font-weight: bold; padding-bottom: 10px; margin-top: -10px;">
-						Choose Service Package
+						Selecione o pacote de serviços
 					</h4>
 					
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-2">
-							<b>Car Owner</b>
+							<b>Proprietário do carro</b>
 						</div>
 						<div class="col-md-10">
 							: <?php echo $owner_name; ?>
@@ -108,7 +108,7 @@
 					
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-2">
-							<b>Car Plate Number</b>
+							<b>Placa do carro</b>
 						</div>
 						<div class="col-md-10">
 							: <?php echo $car_plate; ?>
@@ -117,7 +117,7 @@
 					
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-2">
-							<b>Car Make & Model</b>
+							<b>Fabricante e Modelo</b>
 						</div>
 						<div class="col-md-10">
 							: <?php echo $make_name." ".$car_model; ?>
@@ -126,7 +126,7 @@
 					
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-2">
-							<b>Color</b>
+							<b>Cor</b>
 						</div>
 						<div class="col-md-10">
 							: <?php echo $car_color; ?>
@@ -135,7 +135,7 @@
 					
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-2">
-							<b>Current Mileage</b>
+							<b>Odometro Atual(KM)</b>
 						</div>
 						<div class="col-md-10">
 							<input type="text" name="mileage" class="form-control" style="width: 50%;" autocomplete="off" autofocus required />
@@ -149,9 +149,9 @@
 								<table class="table">
 									<thead>
 										<tr>
-									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Choose</span></th>
-								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px;"><span>Service Package Name</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Price</span></th>
+									    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>Selecione</span></th>
+								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px;"><span>Nome do pacote de serviços</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Preço(R$)</span></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -186,7 +186,7 @@
 										<tr>
 											<td colspan="3" align="center" style="text-align: center;">
 												<button type="submit" class="btn btn-primary btn-md" style="padding-left: 30px; padding-right: 30px;">
-													Next
+													Próx.
 												</button>
 											</td>
 										</tr>

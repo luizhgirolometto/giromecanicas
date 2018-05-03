@@ -496,7 +496,7 @@ class Profit_loss extends CI_Controller
             $jj++;
         } else {
             $objPHPExcel->setActiveSheetIndex(0)->mergeCells("A$jj:H$jj");
-            $objPHPExcel->getActiveSheet()->setCellValue("A$jj", "No match record found!");
+            $objPHPExcel->getActiveSheet()->setCellValue("A$jj", "Nada encontrado!");
             
             $objPHPExcel->getActiveSheet()->getStyle("A$jj")->applyFromArray($text_cell_style);
             $objPHPExcel->getActiveSheet()->getStyle("B$jj")->applyFromArray($text_cell_style);

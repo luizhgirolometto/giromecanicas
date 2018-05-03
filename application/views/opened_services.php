@@ -5,7 +5,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Opened Services</h1>
+			<h1 class="page-header">Serviços Abertos</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -52,15 +52,15 @@
 					<table id="example" class="display" cellspacing="0" width="100%">
 					    <thead>
 					        <tr>
-					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Job Id</th>
-					            <th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Service Advisor</th>
-						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Technician</th>
-						    	<th width="12%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Customer</th>
-						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Car</th>
-						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Plate No.</th>
-						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Started Date</th>
+					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cód.</th>
+					            <th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Usuário</th>
+						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Técnico</th>
+						    	<th width="12%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cliente</th>
+						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Carro</th>
+						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Placa</th>
+						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Data do Inicio</th>
 						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Status</th>
-						    	<th width="8%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Action</th>
+						    	<th width="8%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Ações</th>
 					        </tr>
 					    </thead>
 						<tbody>
@@ -112,7 +112,7 @@
 										</td>
 										<td style="padding: 7px 7px; border-bottom: 1px solid #ddd; letter-spacing: 0.3px;">
 											<a href="<?=base_url()?>services/view_opened_service?job_id=<?php echo $job_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;View&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;Ver&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>
@@ -133,7 +133,7 @@
                                 ?>
 								<tr>
 									<td colspan="9" style="padding: 7px 7px; border-bottom: 1px solid #ddd; letter-spacing: 0.3px; text-align: center;">
-										No match record found!
+										Nada encontrado!
 									</td>
 								</tr>
 						<?php
