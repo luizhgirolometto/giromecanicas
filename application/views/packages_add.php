@@ -6,7 +6,7 @@
 	
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Add New Service Package</h1>
+			<h1 class="page-header">Inserir Pacote</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -54,7 +54,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Name <span class="required">*</span>
+									Nome <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="name" required style="width: 100%;" autofocus autocomplete="off" />
@@ -64,7 +64,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Description
+									Descrição
 								</label>
 								<div class="col-md-7">
 									<textarea name="description" class="form-control"></textarea>
@@ -74,7 +74,7 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Price <span class="required">*</span>
+									Preço <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="price" required style="width: 100%;" autofocus autocomplete="off" />
@@ -84,12 +84,12 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Car Make Type <span class="required">*</span>
+									Região do Veículo <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="car_make_type" class="form-control" required>
-										<option value="">Choose Car Make Type for Service Package</option>
-										<option value="1">Japanese & Korean</option>
+										<option value="">Selecione a Região</option>
+										<option value="1">Japonês & Koreano</option>
 										<option value="2">Continental</option>
 									</select>
 								</div>
@@ -98,11 +98,11 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Discount Applicable <span class="required">*</span>
+									Desconto Aplicado <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="discount_applicable" class="form-control">
-										<option value="0">No</option>
+										<option value="0">Não</option>
 										<option value="1">Yes</option>
 									</select>
 								</div>
@@ -115,8 +115,8 @@
 								</label>
 								<div class="col-md-7">
 									<select name="status" class="form-control">
-										<option value="1">Active</option>
-										<option value="0">Inactive</option>
+										<option value="1">Ativo</option>
+										<option value="0">Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -126,7 +126,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -143,7 +143,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>packages/package_lists" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>

@@ -66,7 +66,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Name <span class="required">*</span>
+									Nome <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="name" required style="width: 100%;" autofocus autocomplete="off" value="<?php echo $name; ?>" />
@@ -76,7 +76,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Description
+									Descrição
 								</label>
 								<div class="col-md-7">
 									<textarea name="description" class="form-control"><?php echo $desc; ?></textarea>
@@ -86,7 +86,7 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Package Price <span class="required">*</span>
+									Preço <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="price" required style="width: 100%;" autofocus autocomplete="off" value="<?php echo $price; ?>" />
@@ -96,14 +96,14 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Car Make Type <span class="required">*</span>
+									Região do Veículo <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="car_make_type" class="form-control" required>
-										<option value="">Choose Car Make Type for Service Package</option>
+										<option value="">Selecione a Região</option>
 										<option value="1" <?php if ($type == "1") {
                         echo 'selected="selected"';
-                    } ?>>Japanese & Korean</option>
+                    } ?>>Japonês & Koreano</option>
 										<option value="2" <?php if ($type == "2") {
                         echo 'selected="selected"';
                     } ?>>Continental</option>
@@ -114,16 +114,16 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Discount Applicable <span class="required">*</span>
+									Desconto Aplicado <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="discount_applicable" class="form-control">
 										<option value="0" <?php if ($dis == "0") {
                         echo 'selected="selected"';
-                    } ?>>No</option>
+                    } ?>>Não</option>
 										<option value="1" <?php if ($dis == "1") {
                         echo 'selected="selected"';
-                    } ?>>Yes</option>
+                    } ?>>Sim</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -137,10 +137,10 @@
 									<select name="status" class="form-control">
 										<option value="1" <?php if ($status == "1") {
                         echo 'selected="selected"';
-                    } ?>>Active</option>
+                    } ?>>Ativo</option>
 										<option value="0" <?php if ($status == "0") {
                         echo 'selected="selected"';
-                    } ?>>Inactive</option>
+                    } ?>>Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -151,7 +151,7 @@
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Update&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Atualizar&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -170,11 +170,11 @@
 			
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					Service Package : <?php echo $name; ?>'s Tasks
+					Pacotes de Serviço : <?php echo $name; ?>'s Tarefas
 					
 					&nbsp;&nbsp;
 					<a href="<?=base_url()?>packages/packageAssignTask?pack_id=<?php echo $id; ?>" style="text-decoration: none;">
-						<button type="button" class="btn btn-primary btn-md">&nbsp;&nbsp;&nbsp;Assign Task&nbsp;&nbsp;&nbsp;</button>
+						<button type="button" class="btn btn-primary btn-md">&nbsp;&nbsp;&nbsp;Atribuir tarefa&nbsp;&nbsp;&nbsp;</button>
 					</a>
 					
 				</div>
@@ -185,8 +185,8 @@
 							<thead>
 								<tr>
 							    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>#</span></th>
-						            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Task Name</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; text-align: center;"><span>Action</span></th>
+						            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Nome da Tarefa</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px; text-align: center;"><span>Ação</span></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -220,7 +220,7 @@
                                     ?>
 									<tr>
 										<td align="center" colspan="3">
-											No Task yet for this Service Package : <?php echo $name; ?>!
+											Nenhuma tarefa ainda para este pacote de serviços : <?php echo $name; ?>!
 										</td>
 									</tr>
 							<?php
@@ -235,7 +235,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>packages/package_lists" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>
