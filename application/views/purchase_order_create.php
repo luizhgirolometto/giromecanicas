@@ -50,7 +50,7 @@
 					}
 				});
 		    } else {
-			    alert("Please Search Material by Name / SKU!");
+			    alert("Por favor, procure o Item pelo nome / SKU!");
 		    }
 			
 		});
@@ -132,7 +132,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Create Purchase Order</h1>
+			<h1 class="page-header">Criar Ordem de Compra</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -178,13 +178,13 @@
 					
 					<div class="row" style="padding-bottom: 10px;">
 						<div class="col-md-4">
-							<label>Purchase Order Number <span style="color: #F00">*</span></label>
+							<label>Número da Ordem <span style="color: #F00">*</span></label>
 							<input type="text" name="po_numb" class="form-control" maxlength="250" autofocus required autocomplete="off" />
 						</div>
 						<div class="col-md-4">
-							<label>Supplier <span style="color: #F00">*</span></label>
+							<label>Fornecedor <span style="color: #F00">*</span></label>
 							<select name="supplier" class="form-control" required>
-								<option value="">Choose Supplier</option>
+								<option value="">Selecione Fornecedor</option>
 								<?php
                                     $supplierResult    = $this->db->query("SELECT * FROM suppliers WHERE status = '1' ORDER BY name ");
                                     $supplierData        = $supplierResult->result();
@@ -204,14 +204,14 @@
 							</select>
 						</div>
 						<div class="col-md-4">
-							<label>Created Date <span style="color: #F00">*</span></label>
+							<label>Data de Criação<span style="color: #F00">*</span></label>
 							<input type="text" name="po_date" class="form-control" value="<?php echo date("$site_dateformat", time()); ?>" readonly />
 						</div>
 					</div>
 					
 					<div class="row" style="padding-bottom: 20px; border-bottom: 1px solid #ddd;">
 						<div class="col-md-8">
-							<label>Note</label>
+							<label>Nota</label>
 							<textarea name="note" class="form-control"></textarea>
 						</div>
 						<div class="col-md-4"></div>
@@ -220,9 +220,9 @@
 					<!-- Product List // START -->
 					<div class="row" style="padding-top: 7px;">
 						<div class="col-md-4">
-							<label>Search Material <span style="color: #F00">*</span></label>
+							<label>Buscar item <span style="color: #F00">*</span></label>
 							<select id="typeahead" class="add_product_po form-control">
-								<option value="">Search Material by Name / SKU</option>
+								<option value="">Buscar item pelo nome / SKU</option>
 							<?php
                                 $prodData = $this->Constant_model->getDataAll('materials', 'id', 'DESC');
                                 for ($p = 0; $p < count($prodData); $p++) {
@@ -242,7 +242,7 @@
 						</div>
 						<div class="col-md-8">
 							<label>&nbsp;</label>
-							<div style="background-color: #686868; color: #FFF; width: 200px; text-align: center; border-radius: 4px; padding: 9px 0px; cursor: pointer;" id="addToList">Add to Lists</div>
+							<div style="background-color: #686868; color: #FFF; width: 200px; text-align: center; border-radius: 4px; padding: 9px 0px; cursor: pointer;" id="addToList">Adicionar para lista</div>
 						</div>
 					</div>
 										
@@ -253,9 +253,9 @@
 		<thead>
 			<tr>
 		    	<th width="30%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">SKU</th>
-		    	<th width="30%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Material Name</th>
-		    	<th width="30%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Order Qty.</th>
-			    <th width="10%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Action</th>
+		    	<th width="30%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Item</th>
+		    	<th width="30%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Ordem Qtde.</th>
+			    <th width="10%" height="35px" style="background-color: #686868; color: #FFF; font-weight: normal; height: 35px !important;">Ação</th>
 			</tr>
 		</thead>
 		<tbody id="addItemWrp">
@@ -278,7 +278,7 @@
 							<center>
 								<input type="hidden" id="row_count" name="row_count" value="1" />
 								<button type="submit" class="btn btn-primary btn-md" id="nextGo" style="font-size: 20px; padding: 10px; 20px;">
-									&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;Inserir&nbsp;&nbsp;&nbsp;
 								</button>
 								<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 									<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -296,7 +296,7 @@
 			
 			<a href="<?=base_url()?>purchase_order/po_view" style="text-decoration: none;">
 				<div class="btn btn-success" style="background-color: #999; color: #FFF; padding: 0px 12px 0px 2px; border: 1px solid #999;"> 
-					<i class="icono-caretLeft" style="color: #FFF;"></i> Back
+					<i class="icono-caretLeft" style="color: #FFF;"></i> Voltar
 				</div>
 			</a>
 			
@@ -318,7 +318,7 @@
 <script>
 	$(document).ready(function() {
 		$(".add_product_po").select2({
-			placeholder: "Search Material by Name / SKU",
+			placeholder: "Buscar por nome do Item/ SKU",
 			allowClear: true
 		});
 	});

@@ -79,7 +79,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Verify Generate Invoice for : Job Id <?php echo $job_id; ?></h1>
+			<h1 class="page-header">Verificar Pedido Gerado : Id <?php echo $job_id; ?></h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
@@ -89,7 +89,7 @@
 					<table border="0" style="border-collapse: collapse; width: 100%; height: auto;">
 						<tr>
 							<td width="50%">
-								Verify Generate Invoice for : Job Id <?php echo $job_id; ?>
+								Verificar Pedido Gerado : Id <?php echo $job_id; ?>
 							</td>
 							<td width="50%" style="text-align: right;"></td>
 						</tr>
@@ -181,35 +181,35 @@
 						<div class="col-md-2"></div>
 						<div class="col-md-4">
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Invoice Number :</div>
+								<div class="col-md-7" style="text-align: right;">Número do Pedido :</div>
 								<div class="col-md-5"></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Service Job Id :</div>
+								<div class="col-md-7" style="text-align: right;">Id do Serviço :</div>
 								<div class="col-md-5">#<?php echo $job_id; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Service Date :</div>
+								<div class="col-md-7" style="text-align: right;">Data :</div>
 								<div class="col-md-5"><?php echo $service_date; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Plate Number :</div>
+								<div class="col-md-7" style="text-align: right;">Placa :</div>
 								<div class="col-md-5"><?php echo $car_plate_numb; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Current Mileage :</div>
+								<div class="col-md-7" style="text-align: right;">Odômetro :</div>
 								<div class="col-md-5"><?php echo $car_mileage; ?> KM</div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Customer Name :</div>
+								<div class="col-md-7" style="text-align: right;">Nome :</div>
 								<div class="col-md-5"><?php echo $cust_fn." ".$cust_ln; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Customer Mobile :</div>
+								<div class="col-md-7" style="text-align: right;">Telefone :</div>
 								<div class="col-md-5"><?php echo $cust_mb; ?></div>
 							</div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-								<div class="col-md-7" style="text-align: right;">Technician Name :</div>
+								<div class="col-md-7" style="text-align: right;">Mecânico :</div>
 								<div class="col-md-5"><?php echo $technician_name; ?></div>
 							</div>
 						</div>
@@ -231,12 +231,12 @@
 								<table class="table">
 									<tr>
 										<td colspan="2" width="100%" style="border-top: 0px; padding-left: 0px; font-size: 18px; padding-bottom: 0px;">
-											<label>Service Package</label>
+											<label>Pacote de Serviço</label>
 										</td>
 									</tr>
 									<tr>
-							            <th width="80%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Package Name</span></th>
-								    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF; text-align: right;"><span>Package Price</span></th>
+							            <th width="80%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Pacote</span></th>
+								    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF; text-align: right;"><span>Preço</span></th>
 									</tr>
 									<?php
                                         $serpackData    = $serpackResult->result();
@@ -278,15 +278,15 @@
 										<table class="table">
 											<tr>
 												<td colspan="3" width="100%" style="border-top: 0px; padding-left: 0px; font-size: 18px; padding-bottom: 0px;">
-													<label>Reported Defects Materials</label>
+													<label>Peças Informadas com defeito</label>
 												</td>
 											</tr>
 											<tr>
-									            <th width="40%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Reported Defects (Remarks)</span></th>
-									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Material</span></th>
-									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Qty.</span></th>
-									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Per Item</span></th>
-										    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Price</span></th>
+									            <th width="40%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Defeitos Informados (OBS)</span></th>
+									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Preças</span></th>
+									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Qtde.</span></th>
+									            <th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Por Item</span></th>
+										    	<th width="20%" style="border-top: 1px solid #ddd !important; border-bottom: 1px solid #ddd; height: 40px; border-top: 0px; background-color: #9b9b9b; color: #FFF;"><span>Preço</span></th>
 											</tr>
 											<?php
                                                 $defectData    = $defectResult->result();
@@ -373,7 +373,7 @@
 									<tr>
 										<td width="50%" height="30px" style="border-top: 0px; padding: 0px;"></td>
 										<td width="30%" style="text-align: right; border-top: 0px; padding: 0px;" valign="middle">
-											<label style="font-weight: bold;">Discount (<?php echo $group_name; ?> <?php echo $group_percent; ?>%) :</label>
+											<label style="font-weight: bold;">Desconto (<?php echo $group_name; ?> <?php echo $group_percent; ?>%) :</label>
 										</td>
 										<td width="20%" style="border-top: 0px; text-align: right; padding: 0px;">
 											<label style="font-weight: bold;">-$<?php echo number_format($discount_amt, 2); ?></label>
@@ -396,7 +396,7 @@
 									<tr>
 										<td width="50%" height="30px" style="border-top: 0px; padding: 0px;"></td>
 										<td width="30%" style="text-align: right; border-top: 0px; padding: 0px;">
-											<label style="font-weight: bold;">Tax (<?php echo $tax_percent; ?>%) :</label>
+											<label style="font-weight: bold;">Taxas (<?php echo $tax_percent; ?>%) :</label>
 										</td>
 										<td width="20%" style="border-top: 0px; text-align: right; padding: 0px;">
 											<label style="font-weight: bold;">$<?php echo number_format($taxTotal_amt, 2); ?></label>
@@ -405,7 +405,7 @@
 									<tr>
 										<td width="50%" height="30px" style="border-top: 0px; padding: 0px;"></td>
 										<td width="30%" style="text-align: right; border-top: 0px; padding: 0px;">
-											<label style="font-weight: bold;">Grand Total :</label>
+											<label style="font-weight: bold;">Total Geral :</label>
 										</td>
 										<td width="20%" style="border-top: 0px; text-align: right; padding: 0px;">
 											<label style="font-weight: bold;">$<?php echo number_format($grandTotal_amt, 2); ?></label>
@@ -429,7 +429,7 @@
 							<input type="hidden" name="grandTotal" value="<?php echo $grandTotal_amt; ?>" />
 							
 							<button type="submit" class="btn btn-primary" style="padding: 14px 30px; font-size: 20px;" id="nextGo">
-								Generate Invoice
+								Gerar Pedido
 							</button>
 							
 							<span id="pwait" class="pull-left" style="font-size: 13px; color: #4a4a4a; margin-top: 7px; display: none; width: 100%;">
@@ -446,7 +446,7 @@
 						<div class="col-md-12" style="text-align: left;">
 							<a href="<?=base_url()?>services/completed_services_view?job_id=<?php echo $job_id; ?>" style="text-decoration: none;">
 								<div class="btn btn-default" style="background-color: #4a4a4a; color: #FFF; border-radius: 3px; border: 1px solid #111;">
-									&nbsp;&nbsp;Back&nbsp;&nbsp;
+									&nbsp;&nbsp;Voltar&nbsp;&nbsp;
 								</div>
 							</a>
 						</div>

@@ -5,7 +5,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Invoiced Services</h1>
+			<h1 class="page-header">Serviços Faturados</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -52,15 +52,15 @@
 					<table id="example" class="display" cellspacing="0" width="100%">
 					    <thead>
 					        <tr>
-					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Job Id</th>
-					            <th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Invoice Numb.</th>
-						    	<th width="12%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Customer</th>
-						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Car</th>
-						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Plate No.</th>
-						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Started Date</th>
-						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Grand Total</th>
+					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Id</th>
+					            <th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Nro. Pedido</th>
+						    	<th width="12%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cliente</th>
+						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Veículo</th>
+						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Placa.</th>
+						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Data Inicial</th>
+						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Total Geral</th>
 						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Status</th>
-						    	<th width="8%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Action</th>
+						    	<th width="8%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Ação</th>
 					        </tr>
 					    </thead>
 						<tbody>
@@ -116,7 +116,7 @@
 										</td>
 										<td style="padding: 7px 7px; border-bottom: 1px solid #ddd; letter-spacing: 0.3px;">
 											<a href="<?=base_url()?>services/invoiced_services_view?job_id=<?php echo $job_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;View&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;Visualizar&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

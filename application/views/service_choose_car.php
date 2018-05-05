@@ -21,14 +21,14 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Abrir Novo Serviço</h1>
+			<h1 class="page-header">Novo Serviço</h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-default">				
 				<div class="panel-heading">
-					Passo 2 de 6 - Escolha o carro
+					Passo 2 de 6 - Insira o Veículo
 				</div>	
 				<div class="panel-body" style="padding: 25px;">
 				
@@ -67,7 +67,7 @@
                     ?>
 					
 					<h4 style="font-weight: bold; padding-bottom: 10px; margin-top: -10px;">
-						Escolher o carro para realizar o serviço
+						Escolha o veículo para realizar o serviço
 					</h4>
 					
 					<form class="form-horizontal" action="<?=base_url()?>services/third_step" method="post">
@@ -84,7 +84,7 @@
 									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Modelo</span></th>
 									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Cor</span></th>
 									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Odometro</span></th>
-									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Chassi.</span></th>
+									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Chassis</span></th>
 									    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Transmissão</span></th>
 										</tr>
 									</thead>
@@ -195,7 +195,7 @@
 				<div class="row" style="border-top: 1px solid #ddd; padding-top: 20px;">
 					<div class="col-md-12" style="text-align: center;">
 						<div class="btn btn-primary" style="padding: 15px 25px; font-size: 20px; border-radius: 3px; cursor: pointer;" id="openToAdd">
-							Clique para adicionar um novo carro
+							Inserir novo veículo
 						</div>
 					</div>
 				</div>
@@ -220,17 +220,17 @@
 	        <!-- Customer // START -->
 	        <div class="row">
 		        <div class="col-md-12">
-			        <label style="font-size: 15px; font-weight: bold;">Detalhe do cliente</label>
+			        <label style="font-size: 15px; font-weight: bold;">Detalhes do cliente</label>
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-		        <div class="col-md-3" style="padding-top: 8px;">NIRC *</div>
+		        <div class="col-md-3" style="padding-top: 8px;">CPF/CNPJ *</div>
 		        <div class="col-md-9">
 			        <input type="text" name="nric" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>
 	        </div>
 	        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
-		        <div class="col-md-3" style="padding-top: 8px;">Primeiro Nome *</div>
+		        <div class="col-md-3" style="padding-top: 8px;">Nome *</div>
 		        <div class="col-md-3">
 			        <input type="text" name="fn" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required />
 		        </div>

@@ -114,11 +114,11 @@
 										<td><?php echo $cust_group_name; ?></td>
 										<td>
 											<a href="<?=base_url()?>customers/view_customer?id=<?php echo $cust_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;View&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Visualizar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 											&nbsp;&nbsp;&nbsp;
 											<a href="<?=base_url()?>customers/edit_customer?id=<?php echo $cust_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Editar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

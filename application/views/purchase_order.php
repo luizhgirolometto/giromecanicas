@@ -4,7 +4,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Purchase Order</h1>
+			<h1 class="page-header">Ordem de Compra</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -48,7 +48,7 @@
                     <div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>purchase_order/create_purchase_order" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Create Purchase Order</button>
+								<button type="button" class="btn btn-primary">Nova Ordem</button>
 							</a>
 						</div>
 						<div class="col-md-6"></div>
@@ -58,11 +58,11 @@
 					<table id="example" class="display" cellspacing="0" width="100%">
 					    <thead>
 					        <tr>
-					            <th width="25%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Purchase Order Number</th>
-					            <th width="20%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Supplier</th>
-						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Created Date</th>
+					            <th width="25%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Número</th>
+					            <th width="20%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Fornecedor</th>
+						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Data de criação</th>
 						    	<th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Status</th>
-						    	<th width="30%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Action</th>
+						    	<th width="30%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Ação</th>
 					        </tr>
 					    </thead>
 						<tbody>
@@ -88,7 +88,7 @@
                     if ($po_status == "1") {
                         ?>
 						<a href="<?=base_url()?>purchase_order/edit_purchase_order?po_id=<?php echo $id; ?>" style="text-decoration: none;">
-							<button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</button>
+							<button type="button" class="btn btn-primary">&nbsp;&nbsp;Editar&nbsp;&nbsp;</button>
 						</a>
 						<a href="<?=base_url()?>purchase_order/deletePO?id=<?php echo $id; ?>&po_numb=<?php echo $po_numb; ?>" style="text-decoration: none; margin-left: 10px;" onclick="return confirm('Are you sure to delete this Purchase Order : <?php echo $po_numb; ?>?')">
 							<i class="icono-cross" style="color:#F00;"></i>
@@ -100,10 +100,10 @@
                     if ($po_status == "2") {
                         ?>
 				<a href="<?=base_url()?>purchase_order/receive_purchase_order?po_id=<?php echo $id; ?>" style="text-decoration: none;">
-					<button type="button" class="btn btn-primary">&nbsp;&nbsp;Receive&nbsp;&nbsp;</button>
+					<button type="button" class="btn btn-primary">&nbsp;&nbsp;Receber&nbsp;&nbsp;</button>
 				</a>
 				<a href="<?=base_url()?>purchase_order/view_purchase_order?po_id=<?php echo $id; ?>" style="text-decoration: none; margin-left: 10px;">
-					<button type="button" class="btn btn-primary">&nbsp;&nbsp;View&nbsp;&nbsp;</button>
+					<button type="button" class="btn btn-primary">&nbsp;&nbsp;Visualizar&nbsp;&nbsp;</button>
 				</a>
 				<?php
                     if ($user_role == "1") {
@@ -121,7 +121,7 @@
                     if ($po_status == "3") {
                         ?>
 				<a href="<?=base_url()?>purchase_order/receive_purchase_order?po_id=<?php echo $id; ?>" style="text-decoration: none;">
-					<button type="button" class="btn btn-primary">&nbsp;&nbsp;View&nbsp;&nbsp;</button>
+					<button type="button" class="btn btn-primary">&nbsp;&nbsp;Visualizar&nbsp;&nbsp;</button>
 				</a>
 				<?php
 

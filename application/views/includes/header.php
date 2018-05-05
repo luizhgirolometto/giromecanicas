@@ -153,14 +153,14 @@
 						<a <?php if (($tk_m == "request_inventory_services") || ($tk_m == "request_inventory_services_view")) {
                     ?> style="background-color: #e9ecf2;" <?php 
                 } ?> href="<?=base_url()?>services/request_inventory_services">
-							Serviços de Inventário Solicitados
+							Aguardando Peças
 						</a>
 					</li>
 					<li>
 						<a <?php if (($tk_m == "drew_out_inventory_services") || ($tk_m == "drew_out_inventory_services_view")) {
                     ?> style="background-color: #e9ecf2;" <?php 
                 } ?> href="<?=base_url()?>services/drew_out_inventory_services">
-							Extrair Serviços de Inventário
+							Serviços em Manutenção
 						</a>
 					</li>
 					<li>

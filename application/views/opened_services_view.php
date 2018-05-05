@@ -125,19 +125,19 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Customer Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Cliente</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Name</div>
+			                    <div class="col-md-4">Nome</div>
 			                    <div class="col-md-8">: <?php echo $cust_fn." ".$cust_ln; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Mobile</div>
+			                    <div class="col-md-4">Telefone</div>
 			                    <div class="col-md-8">: <?php echo $cust_mb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Email</div>
+			                    <div class="col-md-4">E-mail</div>
 			                    <div class="col-md-8">: <?php echo $cust_em; ?></div>
 		                    </div>
 		                    
@@ -146,27 +146,27 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Car Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Veículos</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Car Make</div>
+			                    <div class="col-md-4">Fabricante</div>
 			                    <div class="col-md-8">: <?php echo $car_make_name; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Car Model</div>
+			                    <div class="col-md-4">Modelo</div>
 			                    <div class="col-md-8">: <?php echo $car_model; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Plate Number</div>
+			                    <div class="col-md-4">Placa</div>
 			                    <div class="col-md-8">: <?php echo $car_plate_numb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Color</div>
+			                    <div class="col-md-4">Cor</div>
 			                    <div class="col-md-8">: <?php echo $car_color; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Current Mileage</div>
+			                    <div class="col-md-4">Odômetro</div>
 			                    <div class="col-md-8">: <?php echo $car_mileage; ?>KM</div>
 		                    </div>
 		                    
@@ -179,7 +179,7 @@
 							
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Service Packages</label>
+				                    <label style="font-size: 18px;">Pacotes de Serviços</label>
 			                    </div>
 		                    </div>
 		                    <?php
@@ -194,8 +194,8 @@
 										<table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Price</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Pacote</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Preço</td>
 												</tr>
 												<?php
                                                     $serpackData    = $serpackResult->result();
@@ -228,7 +228,7 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Report Defects</label>
+				                    <label style="font-size: 18px;">Informar Defeitos</label>
 			                    </div>
 		                    </div>
 							<?php
@@ -242,8 +242,8 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Remarks</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Nome</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Observações</td>
 												</tr>
 												<?php
                                                     $defectData    = $defectResult->result();
@@ -278,23 +278,23 @@
 	                    <div class="col-md-6">
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Service Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Serviço</label>
 			                    </div>
 		                    </div>
 							<div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Service Status</div>
+			                    <div class="col-md-4">Status do Serviço</div>
 			                    <div class="col-md-8" style="font-weight: bold; color: #c72a25;">: <?php echo $status_name; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Service Date & Time</div>
+			                    <div class="col-md-4">Serviço Data & Tempo</div>
 			                    <div class="col-md-8" style="font-weight: bold;">: <?php echo $service_date; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Service Advisor</div>
+			                    <div class="col-md-4">Vendedor</div>
 			                    <div class="col-md-8">: <?php echo $advisor_fullname; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Technician Name</div>
+			                    <div class="col-md-4">Mecânico</div>
 			                    <div class="col-md-8">: <?php echo $technician_name; ?></div>
 		                    </div>
 	                    </div>
@@ -310,7 +310,7 @@
 	
 	<a href="<?=base_url()?>services/opened_services" style="text-decoration: none;">
 		<div class="btn btn-default" style="background-color: #4a4a4a; color: #FFF; border-radius: 3px; border: 1px solid #111;">
-			&nbsp;&nbsp;Back&nbsp;&nbsp;
+			&nbsp;&nbsp;Voltar&nbsp;&nbsp;
 		</div>
 	</a>
 	

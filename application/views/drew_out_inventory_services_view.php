@@ -68,7 +68,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Drew Out Inventory for Service : Job Id #<?php echo $job_id; ?></h1>
+			<h1 class="page-header">Serviços em Manutenção : Id #<?php echo $job_id; ?></h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
@@ -78,7 +78,7 @@
 					<table border="0" style="border-collapse: collapse; width: 100%; height: auto;">
 						<tr>
 							<td width="50%">
-								Drew Out Inventory for Service : Job Id #<?php echo $job_id; ?>
+								Serviços em Manutenção : Id #<?php echo $job_id; ?>
 							</td>
 							<td width="50%" style="text-align: right;"></td>
 						</tr>
@@ -125,19 +125,19 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Customer Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Cliente</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Name</div>
+			                    <div class="col-md-4">Nome</div>
 			                    <div class="col-md-8">: <?php echo $cust_fn." ".$cust_ln; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Mobile</div>
+			                    <div class="col-md-4">Telefone</div>
 			                    <div class="col-md-8">: <?php echo $cust_mb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Customer Email</div>
+			                    <div class="col-md-4">E-mail</div>
 			                    <div class="col-md-8">: <?php echo $cust_em; ?></div>
 		                    </div>
 		                    
@@ -146,27 +146,27 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Car Detail</label>
+				                    <label style="font-size: 18px;">Detalhes do Veículo</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Car Make</div>
+			                    <div class="col-md-4">Fabricante</div>
 			                    <div class="col-md-8">: <?php echo $car_make_name; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Car Model</div>
+			                    <div class="col-md-4">Modelo</div>
 			                    <div class="col-md-8">: <?php echo $car_model; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Plate Number</div>
+			                    <div class="col-md-4">Placa</div>
 			                    <div class="col-md-8">: <?php echo $car_plate_numb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Color</div>
+			                    <div class="col-md-4">Cor</div>
 			                    <div class="col-md-8">: <?php echo $car_color; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-4">Current Mileage</div>
+			                    <div class="col-md-4">Odômetro</div>
 			                    <div class="col-md-8">: <?php echo $car_mileage; ?>KM</div>
 		                    </div>
 		                    
@@ -178,7 +178,7 @@
 	                    <div class="col-md-6">
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Service Packages</label>
+				                    <label style="font-size: 18px;">Pacotes de Serviço</label>
 			                    </div>
 		                    </div>
 		                    <?php
@@ -193,8 +193,8 @@
 										<table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Price</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Pacote</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Preço</td>
 												</tr>
 												<?php
                                                     $serpackData    = $serpackResult->result();
@@ -227,7 +227,7 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Report Defects</label>
+				                    <label style="font-size: 18px;">Informar Defeitos</label>
 			                    </div>
 		                    </div>
 							<?php
@@ -241,8 +241,8 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Remarks</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Nome</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Observações</td>
 												</tr>
 												<?php
                                                     $defectData    = $defectResult->result();
@@ -290,13 +290,13 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Remarks</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Request Materials</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Request Qty.</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Nome</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Observações</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Solicitar Peças</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Solicitar Qtde.</td>
 													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Issued Qty.</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Price (Per Item)</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Action</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Preço (por Item)</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Ação</td>
 												</tr>
 												<?php
                                                     $reqDefectData    = $reqDefectResult->result();
@@ -373,11 +373,11 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="23%">Task Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="23%">Request Materials</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="20%">Request Qty.</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="23%">Tarefa</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="23%">Solicitar Peças</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="20%">Solicitar Qtde</td>
 													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="20%">Issue Qty.</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Action</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="14%">Ação</td>
 												</tr>
 												<?php
                                                     $reqpackageData            = $reqpackageResult->result();
@@ -439,7 +439,7 @@
 	
 	<a href="<?=base_url()?>services/drew_out_inventory_services" style="text-decoration: none;">
 		<div class="btn btn-default" style="background-color: #4a4a4a; color: #FFF; border-radius: 3px; border: 1px solid #111;">
-			&nbsp;&nbsp;Back&nbsp;&nbsp;
+			&nbsp;&nbsp;Voltar&nbsp;&nbsp;
 		</div>
 	</a>
 	

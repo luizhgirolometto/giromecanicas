@@ -21,7 +21,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">View Customer Detail : <?php echo $cust_fn." ".$cust_ln; ?></h1>
+			<h1 class="page-header">Visualizar Detalhes do Cliente : <?php echo $cust_fn." ".$cust_ln; ?></h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -29,18 +29,18 @@
 		<div class="col-md-12">
 			<div class="panel panel-default">
 				
-				<div class="panel-heading">Customer Detail</div>
+				<div class="panel-heading">Detalhes do Cliente</div>
 				<div class="panel-body form-horizontal" style="padding: 25px;">
 					<fieldset>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="name">
-								<b>NIRC</b>
+								<b>CPF/CNPJ</b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: <?php echo $nric; ?>
 							</div>
 							<label class="col-md-3 control-label" for="name">
-								<b>Full Name</b>
+								<b>Nome Completo</b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: <?php echo $cust_fn." ".$cust_ln; ?>
@@ -50,7 +50,7 @@
 						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="name">
-								<b>Email </b>
+								<b>E-mail </b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: 
@@ -63,7 +63,7 @@
                                 ?>
 							</div>
 							<label class="col-md-3 control-label" for="name">
-								<b>Mobile</b>
+								<b>Telefone</b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: <?php echo $mb; ?>
@@ -73,7 +73,7 @@
 						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="name">
-								<b>Address </b>
+								<b>Endereço </b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: 
@@ -86,7 +86,7 @@
                                 ?>
 							</div>
 							<label class="col-md-3 control-label" for="name">
-								<b>Postal</b>
+								<b>CEP</b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: 
@@ -103,7 +103,7 @@
 						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="name">
-								<b>Country </b>
+								<b>País </b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: 
@@ -124,7 +124,7 @@
                                 ?>
 							</div>
 							<label class="col-md-3 control-label" for="name">
-								<b>Customer Group</b>
+								<b>Grupo de Cliente</b>
 							</label>
 							<div class="col-md-3" style="padding-top: 8px;">
 								: <?php
@@ -148,7 +148,7 @@
 			</div>
 			
 			<div class="panel panel-default">
-				<div class="panel-heading"><?php echo $cust_fn." ".$cust_ln; ?> Cars Detail</div>
+				<div class="panel-heading"><?php echo $cust_fn." ".$cust_ln; ?> Detalhes do Veículo</div>
 				<div class="panel-body form-horizontal" style="padding: 5px 25px 25px 25px;">
 					
 					<div class="table-responsive">
@@ -157,12 +157,12 @@
 							<thead>
 								<tr>
 							    	<th width="5%" style="border-bottom: 1px solid #111; height: 40px;"><span>#</span></th>
-						            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Plate No.</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Owner</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Car Make</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Car Model</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Color</span></th>
-							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Mileage</span></th>
+						            <th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Placa</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Proprietário</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Fabricante</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Modelo</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Cor</span></th>
+							    	<th width="10%" style="border-bottom: 1px solid #111; height: 40px;"><span>Odômetro</span></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -212,7 +212,7 @@
                                         ?>
 										<tr>
 											<td align="center" colspan="7">
-												No matching records found!
+												Nenhum Registro Encontrado!
 											</td>
 										</tr>
 								<?php	
@@ -226,7 +226,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>customers/customer_lists" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>

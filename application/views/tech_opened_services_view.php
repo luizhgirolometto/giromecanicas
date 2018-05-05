@@ -72,7 +72,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Check Package Tasks & Request Inventory for : Job Id #<?php echo $job_id; ?></h1>
+			<h1 class="page-header">Checando Tarefas & Aguadando Peças Para : Job Id #<?php echo $job_id; ?></h1>
 		</div>
 	</div><!--/.row-->
 	<div class="row">
@@ -82,7 +82,7 @@
 					<table border="0" style="border-collapse: collapse; width: 100%; height: auto;">
 						<tr>
 							<td width="50%">
-								Check Package Tasks & Request Inventory for : Job Id #<?php echo $job_id; ?>
+								Checando Tarefas & Aguadando Peças Para : Job Id #<?php echo $job_id; ?>
 							</td>
 							<td width="50%" style="text-align: right;"></td>
 						</tr>
@@ -131,39 +131,39 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Customer &amp; Car Detail</label>
+				                    <label style="font-size: 18px;">Cliente &amp; Detalhes do Veículo</label>
 			                    </div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Customer Name</div>
+			                    <div class="col-md-6">Cliente</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $cust_fn." ".$cust_ln; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Customer Mobile</div>
+			                    <div class="col-md-6">Telefone</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $cust_mb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Customer Email</div>
+			                    <div class="col-md-6">E-mail</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $cust_em; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Car Make</div>
+			                    <div class="col-md-6">Marca</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $car_make_name; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Car Model</div>
+			                    <div class="col-md-6">Modelo</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $car_model; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Plate Number</div>
+			                    <div class="col-md-6">Placa</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $car_plate_numb; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Color</div>
+			                    <div class="col-md-6">Cor</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $car_color; ?></div>
 		                    </div>
 		                    <div class="row" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">
-			                    <div class="col-md-6">Current Mileage</div>
+			                    <div class="col-md-6">Odômetro</div>
 			                    <div class="col-md-6">:&nbsp;<?php echo $car_mileage; ?>KM</div>
 		                    </div>
 		                    
@@ -172,7 +172,7 @@
 							
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Service Packages</label>
+				                    <label style="font-size: 18px;">Pacote de Serviços</label>
 			                    </div>
 		                    </div>
 		                    <?php
@@ -187,8 +187,8 @@
 										<table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Package Price</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Serviço</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Preço</td>
 												</tr>
 												<?php
                                                     $serpackData    = $serpackResult->result();
@@ -221,7 +221,7 @@
 		                    
 		                    <div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Report Defects</label>
+				                    <label style="font-size: 18px;">Reportar Defeitos</label>
 			                    </div>
 		                    </div>
 							<?php
@@ -235,8 +235,8 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Remarks</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Nome</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;">Observações</td>
 												</tr>
 												<?php
                                                     $defectData    = $defectResult->result();
@@ -276,7 +276,7 @@
 	                    <div class="col-md-12">
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Check Report Defects</label>
+				                    <label style="font-size: 18px;">Verificar defeitos no relatório</label>
 			                    </div>
 		                    </div>
 		                    <div class="row">
@@ -285,11 +285,11 @@
 					                    <table class="table">
 											<tbody>
 												<tr>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Name</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Remarks</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Check Status</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="40%">Request Materials</td>
-													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="20%">Request Quantity</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Nome</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Observações</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="15%">Checar Status</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="40%">Solicitar Peças</td>
+													<td style="font-weight: bold; border-top: 0px; padding: 5px;" width="20%">Solicitar Qtde</td>
 												</tr>
 							<?php
                                 $defectData        = $defectResult->result();
@@ -302,13 +302,13 @@
 										<td><?php echo $defect_remarks; ?></td>
 										<td>
 											<select name="defect_status_<?php echo $defect_id; ?>" class="form-control" style="width: 80%;">
-												<option value="1">No need Repair</option>
-												<option value="2">Repair</option>
+												<option value="1">OK</option>
+												<option value="2">Reparar</option>
 											</select>
 										</td>
 										<td>
 											<select name="defect_req_mat_<?php echo $defect_id; ?>" class="defect_material_<?php echo $defect_id; ?> form-control" style="width: 90%">
-												<option value="">Search Material</option>
+												<option value="">Buscar Peças</option>
 												<?php
                                                     $matData    = $this->Constant_model->getDataTwoColumnSortColumn("materials", "status", "1", "material_type", "$car_make_type", "name", "ASC");
                                 for ($md = 0; $md < count($matData); $md++) {
@@ -366,7 +366,7 @@
 	                    <div class="col-md-12">
 							<div class="row">
 			                    <div class="col-md-12">
-				                    <label style="font-size: 18px;">Service Package Tasks</label>
+				                    <label style="font-size: 18px;">Tarefas do pacote de serviço</label>
 			                    </div>
 		                    </div>
 							<?php
@@ -377,7 +377,7 @@
                                 $package_name    = $packageData[$sp]->package_name; ?>
 									<div class="row">
 										<div class="col-md-12">
-											<label style="font-size: 18px;">Package Name : <?php echo $package_name; ?></label>
+											<label style="font-size: 18px;">Nome do Pacote : <?php echo $package_name; ?></label>
 											<div class="table-responsive">
 							                    <table class="table">
 													<tbody>
@@ -401,13 +401,13 @@
 				<td><?php echo $task_name; ?></td>
 				<td>
 					<select name="package_status_<?php echo $serpack_id; ?>_<?php echo $packTask_id; ?>" class="form-control" style="width: 80%;">
-						<option value="1">No need Repair</option>
-						<option value="2">Repair</option>
+						<option value="1">OK</option>
+						<option value="2">Reparar</option>
 					</select>
 				</td>
 				<td>
 					<select name="package_req_mat_<?php echo $serpack_id; ?>_<?php echo $packTask_id; ?>" class="package_material_<?php echo $serpack_id; ?>_<?php echo $packTask_id; ?> form-control">
-						<option value="">Search Material</option>
+						<option value="">Buscar Peças</option>
 						<?php
                             $matData    = $this->Constant_model->getDataTwoColumnSortColumn("materials", "status", "1", "material_type", "$car_make_type", "name", "ASC");
                                     for ($md = 0; $md < count($matData); $md++) {
@@ -464,7 +464,7 @@
 					<div class="row" style="padding-top: 30px;">
 						<div class="col-md-12" style="text-align: center;">
 							<button type="submit" class="btn btn-primary" style="font-size: 22px; padding: 20px;">
-								Request Materials
+								Solicitar Peças
 							</button>
 						</div>
 					</div>
@@ -478,7 +478,7 @@
 	
 	<a href="<?=base_url()?>technician_services/tech_opened_services" style="text-decoration: none;">
 		<div class="btn btn-default" style="background-color: #4a4a4a; color: #FFF; border-radius: 3px; border: 1px solid #111;">
-			&nbsp;&nbsp;Back&nbsp;&nbsp;
+			&nbsp;&nbsp;Voltar&nbsp;&nbsp;
 		</div>
 	</a>
 	

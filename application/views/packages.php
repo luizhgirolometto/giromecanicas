@@ -68,7 +68,7 @@
 						    <thead>
 						        <tr>
 						            <th width="5%"><span>#</span></th>
-						            <th width="10%"><span>Nome/span></th>
+						            <th width="10%"><span>Nome</span></th>
 							    	<th width="10%"><span>Tipo da Marca</span></th>
 							    	<th width="10%"><span>Preço</span></th>
 							    	<th width="10%"><span>Status</span></th>
