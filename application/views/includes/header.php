@@ -284,7 +284,7 @@
                     ?> class="parent" <?php 
                 } ?>>
 				<a data-toggle="collapse" href="#profit_loss">
-					<svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"/></svg>  Lucro &amp; Perda
+					<svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"/></svg>  Lucro e Perda
 				</a>
 				<ul class="children <?php if ($tk_c != "profit_loss") {
                     ?> collapse <?php 
@@ -293,7 +293,7 @@
 						<a <?php if (($tk_m == "pnl_monthly")) {
                     ?> style="background-color: #e9ecf2;" <?php 
                 } ?> href="<?=base_url()?>profit_loss/pnl">
-							Lucro &amp; Perda
+							Lucro e Perda
 						</a>
 					</li>
 				</ul>

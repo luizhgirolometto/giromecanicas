@@ -52,7 +52,7 @@
 					<table id="example" class="display" cellspacing="0" width="100%">
 					    <thead>
 					        <tr>
-					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cod</th>
+					            <th width="5%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cód.</th>
 					            <th width="15%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Vendedor</th>
 						    	<th width="10%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Mecânico</th>
 						    	<th width="12%" style="padding: 7px 7px; border-bottom: 1px solid #111; letter-spacing: 0.3px;">Cliente</th>

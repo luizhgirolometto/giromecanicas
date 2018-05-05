@@ -307,11 +307,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_request_inventory_count().' registros';
-        } else {
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_request_inventory_count().' registros';
+        } else {  
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_request_inventory_count().' registros';
+            $sh_text    = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_request_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -379,11 +379,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_drew_out_inventory_count().' registros';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_drew_out_inventory_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_drew_out_inventory_count().' registros';
+            $sh_text    = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_drew_out_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -450,11 +450,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_completed_inventory_count().' registros';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_completed_inventory_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_completed_inventory_count().' registros';
+            $sh_text    = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_completed_inventory_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -521,11 +521,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_invoiced_services_count().' registros';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_invoiced_services_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_invoiced_services_count().' registros';
+            $sh_text    = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_invoiced_services_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;
@@ -593,11 +593,11 @@ class Services extends CI_Controller
                 $start_point    = 1;
             }
             
-            $sh_text = "Exibindo$start_point to ".count($data['results']).' of '.$this->Services_model->record_closed_services_count().' registros';
+            $sh_text = "Exibindo $start_point até ".count($data['results']).' de '.$this->Services_model->record_closed_services_count().' registros';
         } else {
             $start_sh    = $page + 1;
             $end_sh    = $page + count($data['results']);
-            $sh_text    = "Exibindo$start_sh to $end_sh of ".$this->Services_model->record_closed_services_count().' registros';
+            $sh_text    = "Exibindo $start_sh até $end_sh de ".$this->Services_model->record_closed_services_count().' registros';
         }
 
         $data['displayshowingentries'] = $sh_text;

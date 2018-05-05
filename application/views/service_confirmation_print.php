@@ -35,7 +35,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Print Service Confirmation</title>
+		<title>Imprimir comfirmação do serviço</title>
 		<script src="<?=base_url()?>assets/js/jquery-1.7.2.min.js"></script>
 		
 <style type="text/css" media="all">
@@ -110,7 +110,7 @@
 	<table border="0" style="border-collapse: collapse; font-family: arial; font-size: 11px;" width="100%" height="auto">
 		<tr>
 			<td width="100%" height="auto" align="center">
-				<h1 style="font-size: 40px; color: #005b8a;">Service Confirmation</h1>
+				<h1 style="font-size: 40px; color: #005b8a;">Confirmação do serviço</h1>
 			</td>
 		</tr>
 	</table>
@@ -161,31 +161,31 @@
 			<td width="40%" height="auto" align="right" valign="top">
 				<table border="0" style="border-collapse: collapse; margin-top: 50px;" width="100%" height="auto">
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Service Job Id :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Código do Serviço :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;#<?php echo $job_id; ?></td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Service Date :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Data do Serviço :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $service_date; ?></td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Plate Number :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Placa :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $car_plate_numb; ?></td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Current Mileage :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Odômetro Atual :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $car_mileage; ?> KM</td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Customer Name :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Nome do Cliente :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $cust_fn." ".$cust_ln; ?></td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Customer Mobile :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Celular :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $cust_mb; ?></td>
 					</tr>
 					<tr>
-						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Technician Name :</td>
+						<td width="60%" style="padding-top: 3px; padding-bottom: 3px; text-align: right;">Nome do Técnico :</td>
 						<td width="40%" style="padding-top: 3px; padding-bottom: 3px;">&nbsp;&nbsp;&nbsp;<?php echo $technician_name; ?></td>
 					</tr>
 				</table>

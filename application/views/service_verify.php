@@ -249,7 +249,7 @@
 								<div class="table-responsive">
 									<table class="table">
 										<tr>
-								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Technician Name</span></th>
+								            <th width="20%" style="border-bottom: 1px solid #111; height: 40px; border-top: 0px;"><span>Nome do Técnico</span></th>
 									    </tr>
 									    <tr>
 										    <td>

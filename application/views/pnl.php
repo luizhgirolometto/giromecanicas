@@ -32,7 +32,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Profit &amp; Loss</h1>
+			<h1 class="page-header">Lucro e Perda</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -46,20 +46,20 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="form-group">
-								<label>Date From</label>
+								<label>Data Inicial</label>
 								<input class="form-control" name="date_from" required id="date_from" value="<?php echo $url_start; ?>" />
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label>Date To</label>
+								<label>Data Final</label>
 								<input class="form-control" name="date_to" required id="date_to" value="<?php echo $url_end; ?>" />
 							</div>
 						</div>
 						<div class="col-md-2" style="padding-top: 5px;">
 							<br />
 							<input type="hidden" name="search" value="1" />
-							<button type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Get Report&nbsp;&nbsp;&nbsp;</button>
+							<button type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Gerar Relatório&nbsp;&nbsp;&nbsp;</button>
 						</div>
 						<div class="col-md-2" style="text-align: right; padding-top: 5px;">
 							<br />
@@ -68,7 +68,7 @@
                                     ?>
 									<a href="<?=base_url()?>profit_loss/exportPnL?date_from=<?php echo $url_start; ?>&date_to=<?php echo $url_end; ?>" style="text-decoration: none;" target="_blank">
 										<button type="button" class="btn btn-primary" style="background-color: #8ad919; border: 1px solid #8ad919; padding: 7px 27px;">
-											Export
+											Exportar
 										</button>
 									</a>
 							<?php
@@ -254,14 +254,14 @@
 							<div class="table-responsive">
 								<table border="0" style="border-collapse: collapse; width: 100%;">
 									<tr>
-										<td class="table_header" width="7%">Job Id</td>
-										<td class="table_header" width="12%">Invoice Numb.</td>
-										<td class="table_header" width="15%">Date & Time</td>
-										<td class="table_header" width="15%">Customer</td>
-										<td class="table_header" width="12%">Plate Number</td>
-										<td class="table_header" width="12%">Grand Total</td>
-										<td class="table_header" width="12%">Cost Total</td>
-										<td class="table_header" width="12%">Profit Total</td>
+										<td class="table_header" width="7%">Cód.</td>
+										<td class="table_header" width="12%">Nro. Fatura</td>
+										<td class="table_header" width="15%">Data e Hora</td>
+										<td class="table_header" width="15%">Cliente</td>
+										<td class="table_header" width="12%">Placa</td>
+										<td class="table_header" width="12%">Total Geral</td>
+										<td class="table_header" width="12%">Total de Custos</td>
+										<td class="table_header" width="12%">Lucro Total</td>
 									</tr>
 <?php
     $all_total_grand_amt        = 0;
