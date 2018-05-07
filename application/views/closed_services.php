@@ -113,7 +113,7 @@
 										</td>
 										<td style="padding: 7px 7px; border-bottom: 1px solid #ddd; letter-spacing: 0.3px;">
 											<a href="<?=base_url()?>services/closed_services_view?job_id=<?php echo $job_id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;View&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;Visualizar&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

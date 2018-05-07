@@ -17,7 +17,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Edit Material : <?php echo $mat_name; ?></h1>
+			<h1 class="page-header">Editar Material : <?php echo $mat_name; ?></h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -66,7 +66,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
 									SKU <span class="required">*</span><br />
-									<span style="color: #808080; font-size: 12px;">Stock Keeping Unit</span>
+									<span style="color: #808080; font-size: 12px;">Unidade de medida</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="sku" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" value="<?php echo $mat_sku; ?>" readonly />
@@ -75,7 +75,7 @@
 							</div>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Material Name <span class="required">*</span>
+									Produto <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="material_name" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" value="<?php echo $mat_name; ?>" />
@@ -85,11 +85,11 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Material Type <span class="required">*</span>
+									Tipo <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<select name="material_type" class="form-control" required style="border: 1px solid #3a3a3a; color: #010101;">
-										<option value="">Choose Material Type</option>
+										<option value="">Selecione o tipo</option>
 									<?php
                                         $matTypeData    = $this->Constant_model->getDataAll("material_type", "id", "ASC");
                                         for ($c = 0; $c < count($matTypeData); $c++) {
@@ -112,7 +112,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Cost <span class="required">*</span>
+									Custo <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="cost" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" value="<?php echo $mat_cost; ?>" />
@@ -122,7 +122,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Price <span class="required">*</span>
+									Preço <span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="price" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" value="<?php echo $mat_price; ?>" />
@@ -138,10 +138,10 @@
 									<select name="status" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;">
 										<option value="1" <?php if ($mat_status == "1") {
                                         echo 'selected="selected"';
-                                    } ?>>Active</option>
+                                    } ?>>Ativo</option>
 										<option value="0" <?php if ($mat_status == "0") {
                                         echo 'selected="selected"';
-                                    } ?>>Inactive</option>
+                                    } ?>>Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-7"></div>
@@ -152,7 +152,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-3 widget-left" style="height: auto; padding-top: 0px;">
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Update&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Atualizar&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -175,14 +175,14 @@
 							<table border="0" style="border-collapse: collapse; width: 100%;">
 								<tr>
 									<td width="50%" align="left">
-										<h5 style="font-size: 24px;">Inventory Quantity : <?php echo $mat_name; ?></h5>
+										<h5 style="font-size: 24px;">Quantidade em estoque : <?php echo $mat_name; ?></h5>
 									</td>
 									<td width="50%" align="right">
 										<?php
                                             if ($user_role == "1") {
                                                 ?>
 										<a href="<?=base_url()?>materials/exportUpdatedHistory?mat_id=<?php echo $id; ?>" style="text-decoration: none;" target="_blank">
-											<div class="btn btn-success">Export Updated History</div>
+											<div class="btn btn-success">Exportar Histórico Atualizado</div>
 										</a>
 										<?php
 
@@ -211,7 +211,7 @@
 					
 					<div class="row" style="padding-top: 10px; padding-bottom: 10px;">
 						<div class="col-md-3">
-							<label>Current Inventory Quantity</label>
+							<label>Quantidade de estoque atual</label>
 						</div>
 						<div class="col-md-9">: <?php echo $inv_qty; ?></div>
 					</div>
@@ -220,14 +220,14 @@
 					<div class="row" style="border-top: 1px solid #ddd; padding-top: 10px; padding-bottom: 10px;">
 						<div class="col-md-3"></div>
 						<div class="col-md-6" style="text-align: center;">
-							<h5 style="font-size: 24px;">Update Inventory Qty.</h5>
+							<h5 style="font-size: 24px;">Atualiza Qtde em estoque.</h5>
 						</div>
 						<div class="col-md-3"></div>
 					</div>
 					<div class="row" style="padding-top: 5px; padding-bottom: 5px;">
 						<div class="col-md-3"></div>
 						<div class="col-md-3" style="padding-top: 7px; text-align: right;">
-							<label>Inventory Quantity *</label>
+							<label>Qtde Estoque *</label>
 						</div>
 						<div class="col-md-3">
 							<input type="text" name="qty" class="form-control" style="border: 1px solid #3a3a3a; color: #010101;" required autocomplete="off" />
@@ -241,7 +241,7 @@
 							<input type="hidden" name="mat_id" value="<?php echo $id; ?>" />
 							<input type="hidden" name="mat_sku" value="<?php echo $mat_sku; ?>" />
 							<button type="submit" class="btn btn-primary btn-md">
-								Update Quantity
+								Atualizar Quantidade
 							</button>
 						</div>
 						<div class="col-md-3"></div>
@@ -252,7 +252,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>materials/materials_list" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>

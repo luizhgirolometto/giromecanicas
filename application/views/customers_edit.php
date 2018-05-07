@@ -21,7 +21,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Edit Customer</h1>
+			<h1 class="page-header">Editar Cliente</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -69,7 +69,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									NIRC <span class="required">*</span>
+									CPF/CNPJ <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="nric" required style="width: 100%;" autofocus autocomplete="off" value="<?php echo $nric; ?>" />
@@ -79,7 +79,7 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									First Name <span class="required">*</span>
+									Primeiro Nome <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="fn" required style="width: 100%;" autocomplete="off" value="<?php echo $cust_fn; ?>" />
@@ -89,7 +89,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Last Name 
+									Sobrenome
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="ln" style="width: 100%;" autocomplete="off" value="<?php echo $cust_ln; ?>" />
@@ -99,7 +99,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Email Address
+									E-mail
 								</label>
 								<div class="col-md-7">
 									<input type="email" class="form-control" name="em" style="width: 100%;" autocomplete="off" value="<?php echo $email; ?>" />
@@ -109,7 +109,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Mobile <span class="required">*</span>
+									Telefone <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="mb" required style="width: 100%;" autocomplete="off" value="<?php echo $mb; ?>" />
@@ -119,7 +119,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Address
+									Endereço
 								</label>
 								<div class="col-md-7">
 									<textarea name="address" class="form-control"><?php echo $address; ?></textarea>
@@ -129,7 +129,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Postal Code
+									CEP
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="postal" style="width: 100%;" autocomplete="off" value="<?php echo $postal; ?>" />
@@ -139,11 +139,11 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Country
+									País
 								</label>
 								<div class="col-md-7">
 									<select class="add_cust_country form-control" name="country" tabindex="-1" style="width: 100%;">
-										<option value="">Choose Country</option>
+										<option value="">Selecione País</option>
 									<?php
                                         $countryData        = $this->Constant_model->getDataAll("countries", "name", "ASC");
                                         for ($c = 0; $c < count($countryData); $c++) {
@@ -165,7 +165,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Customer Group
+									GRUPO DE CLIENTE
 								</label>
 								<div class="col-md-7">
 									<select class="add_cust_group form-control" name="customer_group" tabindex="-1" style="width: 100%;" required>
@@ -196,10 +196,10 @@
 									<select name="status" class="form-control">
 										<option value="1" <?php if ($status == "1") {
                                         echo 'selected="selected"';
-                                    } ?>>Active</option>
+                                    } ?>>Ativo</option>
 										<option value="0" <?php if ($status == "0") {
                                         echo 'selected="selected"';
-                                    } ?>>Inactive</option>
+                                    } ?>>Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -210,7 +210,7 @@
 								<div class="col-md-7 widget-left" style="height: auto; padding-top: 0px;">
 									
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Update&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Atualizar&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -227,7 +227,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>customers/customer_lists" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>

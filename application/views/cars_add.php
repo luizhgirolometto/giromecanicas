@@ -238,7 +238,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Kilometragem (km)<span class="required">*</span>
+									Odômetro (km)<span class="required">*</span>
 								</label>
 								<div class="col-md-3">
 									<input type="text" name="mileage" class="form-control" required autocomplete="off" />

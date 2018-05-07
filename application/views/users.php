@@ -10,7 +10,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Users</h1>
+			<h1 class="page-header">Usuários</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -59,7 +59,7 @@
 					<div class="row" style="padding-bottom: 15px;">
 						<div class="col-md-6">
 							<a href="<?=base_url()?>setting/add_user" style="text-decoration: none;">
-								<button type="button" class="btn btn-primary">Add New User</button>
+								<button type="button" class="btn btn-primary">Inserir Novo Usuário</button>
 							</a>
 						</div>
 						<div class="col-md-6"></div>
@@ -75,11 +75,11 @@
 						    <thead>
 						        <tr>
 						            <th width="5%"><span>#</span></th>
-						            <th width="15%"><span>Full Name</span></th>
-							    	<th width="20%"><span>Email</span></th>
-							    	<th width="20%"><span>Role</span></th>
+						            <th width="15%"><span>Nome Completo</span></th>
+							    	<th width="20%"><span>E-mail</span></th>
+							    	<th width="20%"><span>Cargo</span></th>
 							    	<th width="10%"><span>Status</span></th>
-							    	<th width="20%"><span>Action</span></th>
+							    	<th width="20%"><span>Ação</span></th>
 						        </tr>
 						    </thead>
 							<tbody>
@@ -134,11 +134,11 @@
 										</td>
 										<td>
 											<a href="<?=base_url()?>setting/changePassword?id=<?php echo $id; ?>" style="text-decoration: none;">
-												<button type="button" class="btn btn-primary">Change Password</button>
+												<button type="button" class="btn btn-primary">Alterar Senha</button>
 											</a>
 											
 											<a href="<?=base_url()?>setting/edit_user?id=<?php echo $id; ?>" style="text-decoration: none; margin-left: 10px;">
-												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+												<button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Editar&nbsp;&nbsp;&nbsp;</button>
 											</a>
 										</td>
 									</tr>

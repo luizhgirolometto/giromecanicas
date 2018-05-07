@@ -50,7 +50,7 @@
 	
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">System Setting</h1>
+			<h1 class="page-header">Configuração do sistema</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -124,7 +124,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Workshop Name <span class="required">*</span>
+									Nome da Empresa <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="site_name" required style="width: 100%;" value="<?php echo $site_name; ?>" />
@@ -134,7 +134,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Address
+									Endereço
 								</label>
 								<div class="col-md-7">
 									<textarea name="address" class="form-control" style="width: 100%; height: 120px;"><?php echo $address; ?></textarea>
@@ -144,7 +144,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Telephone
+									Telefone
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="tel" style="width: 100%;" value="<?php echo $tel; ?>" />
@@ -164,7 +164,7 @@
 						
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Tax <span class="required">*</span>
+									Taxas <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="tax" required style="width: 100%;" value="<?php echo $tax; ?>" />
@@ -198,7 +198,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Pagination Per Page <span class="required">*</span>
+									Itens por pagina <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select class="pagination form-control" name="pagination" tabindex="-1" style="width: 100%;">
@@ -224,7 +224,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									Currency <span class="required">*</span>
+									Moeda <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select class="setting_currency form-control" name="currency" tabindex="-1" style="width: 100%;">
@@ -249,7 +249,7 @@
 							
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="email">
-									System Date Format <span class="required">*</span>
+									Formato de data/hora <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<select name="dateformat" class="setting_date_format form-control" required style="width: 100%">
@@ -289,7 +289,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-7 widget-left" style="height: auto;">
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">Update System Setting</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">Atualizar sistema</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />

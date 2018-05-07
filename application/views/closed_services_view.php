@@ -86,7 +86,7 @@
 					<table border="0" style="border-collapse: collapse; width: 100%; height: auto;">
 						<tr>
 							<td width="50%">
-								Serviço fechado por: Job Id #<?php echo $job_id; ?>
+								Serviço fechado por: Id #<?php echo $job_id; ?>
 							</td>
 							<td width="50%" style="text-align: right;">
 								<a href="<?=base_url()?>services/print_service_invoice?job_id=<?php echo $job_id; ?>" style="text-decoration: none;" target="_blank">

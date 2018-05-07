@@ -14,7 +14,7 @@
 	
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Edit Payment Method</h1>
+			<h1 class="page-header">Editar Métodos de Pagamento</h1>
 		</div>
 	</div><!--/.row-->
 	
@@ -62,7 +62,7 @@
 						<fieldset>
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="name">
-									Payment Name <span class="required">*</span>
+									Forma <span class="required">*</span>
 								</label>
 								<div class="col-md-7">
 									<input type="text" class="form-control" name="name" required style="width: 100%;" value="<?php echo $pay_name; ?>" autofocus autocomplete="off" />
@@ -78,10 +78,10 @@
 									<select name="status" class="form-control">
 										<option value="1" <?php if ($pay_status == "1") {
                         echo 'selected="selected"';
-                    } ?>>Active</option>
+                    } ?>>Ativo</option>
 										<option value="0" <?php if ($pay_status == "0") {
                         echo 'selected="selected"';
-                    } ?>>Inactive</option>
+                    } ?>>Inativo</option>
 									</select>
 								</div>
 								<div class="col-md-3"></div>
@@ -93,7 +93,7 @@
 									
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
 									
-									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Update&nbsp;&nbsp;&nbsp;</button>
+									<button type="submit" class="btn btn-primary btn-md pull-left" id="nextGo">&nbsp;&nbsp;&nbsp;Atualizar&nbsp;&nbsp;&nbsp;</button>
 									
 									<span id="pwait" style="display: none; font-size: 14px; font-weight: 300; font-family: 'Futura,Trebuchet MS',Arial,sans-serif;">
 										<img src="<?=base_url()?>assets/images/loading.gif" />
@@ -110,7 +110,7 @@
 			</div>
 			
 			<a href="<?=base_url()?>setting/payment_methods" style="text-decoration: none;">
-				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<button type="reset" class="btn btn-default" style="background-color: #747274; color: #FFF;">&nbsp;&nbsp;&nbsp;&nbsp;Voltar&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 		</div>
 	</div>
